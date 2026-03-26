@@ -360,14 +360,29 @@ const DEADLINES = [
     date: '2026-03-17',
     time: null,
     category: 'Stage',
-    description: '⚠️ CHANGEMENT (email TN05 du 13/03) : Le rapport N\'EST PLUS à remettre en version papier au bureau des stages. Il doit être ENVOYÉ PAR MAIL EN FORMAT PDF à l\'EC UTC évaluateur. Le nom de l\'EC vous sera communiqué dès que les jurys seront constitués (quelques semaines). Exception : si le rapport est confidentiel ou que la soutenance est à huis clos, remettre la version papier au service des stages dès que possible.',
+    description: '⚠️ MAJ (email du 25/03) : Attendre le <strong>15 avril</strong> avant d\'envoyer le rapport — la composition des jurys peut évoluer jusqu\'à cette date. Envoyer par mail en PDF uniquement au <strong>Président du jury</strong> (désigné par la lettre P après son nom). Ne pas envoyer au second enseignant (il ne corrige pas). Demander confirmation de réception. Si rapport confidentiel : cocher "confidentialité Oui" lors de l\'inscription à la soutenance + déposer version papier au service des stages (soutenance à huis clos).',
     tasks: [
       { id: 'tn05-1', label: 'Rédiger / finaliser le rapport', done: false },
       { id: 'tn05-2', label: 'Faire signer la dernière page par le tuteur entreprise', done: false },
       { id: 'tn05-3', label: 'Faire remplir la fiche d\'appréciation par le tuteur entreprise', done: false },
-      { id: 'tn05-4', label: '📬 Attendre le nom de l\'EC évaluateur UTC (jurys en cours de constitution)', done: false },
-      { id: 'tn05-5', label: 'Envoyer rapport PDF par mail à l\'EC UTC évaluateur (dès réception du nom)', done: false },
-      { id: 'tn05-6', label: 'Rapport confidentiel ? → Remettre version papier au service des stages', done: false },
+      { id: 'tn05-4', label: '📬 Attendre le 15 avril (jurys susceptibles d\'évoluer jusqu\'à cette date)', done: false },
+      { id: 'tn05-5', label: 'Envoyer rapport PDF par mail au Président du jury (lettre P après son nom)', done: false },
+      { id: 'tn05-6', label: 'Demander confirmation de réception à l\'EC correcteur', done: false },
+      { id: 'tn05-7', label: 'Rapport confidentiel ? → Cocher "confidentialité Oui" + déposer version papier au service des stages', done: false },
+    ]
+  },
+  {
+    id: 'tn05-inscription-soutenance',
+    title: '📝 Inscription soutenance TN05 — Fermeture ENT',
+    date: '2026-04-15',
+    time: '12:00',
+    category: 'Stage',
+    description: '🆕 NEW (email Dany-Laure Lavillette du 23/03) : Le site d\'inscription aux soutenances TN05 <strong>se ferme le 15 avril à 12h00</strong>. Après cette date, les étudiants non-inscrits seront placés d\'office sur un créneau restant. Les soutenances se dérouleront à l\'UTC entre le <strong>19 mai et le 5 juin 2026</strong>. Attention : ne pas s\'inscrire sur un créneau qui chevauche un TP (impossible de changer ensuite). Chaque session = 6 étudiants + 2 membres du jury (1h30 de présence obligatoire).',
+    tasks: [
+      { id: 'tn05-ins-1', label: '⚡ S\'inscrire sur ENT > Pédagogie > Stages > Stages - appli. informatiques > Inscription soutenances TN05', done: false },
+      { id: 'tn05-ins-2', label: 'Vérifier les créneaux libres (1er arrivé, 1er servi)', done: false },
+      { id: 'tn05-ins-3', label: 'Choisir un créneau compatible avec son emploi du temps (éviter TP)', done: false },
+      { id: 'tn05-ins-4', label: 'Attendre le mail automatique de confirmation (tient lieu de convocation)', done: false },
     ]
   },
   {
@@ -389,11 +404,14 @@ const DEADLINES = [
     date: '2026-04-09',
     time: '19:00',
     category: 'LA13',
-    description: 'Médian LA13 le jeudi 9 avril de 19h à 20h30. Aucune dérogation possible. Présence obligatoire.',
+    description: 'MAJ (email Lynne Forest du 25/03) : Médian LA13 le <strong>jeudi 9 avril de 19h00 à 20h30</strong>. Aucune dérogation accordée. Porte sur les <strong>5 premiers chapitres du polycopié</strong>. Format en 3 parties : 1️⃣ <em>Use of English (35 pts)</em> : style interrogatif, vocabulaire (word formation + prepositions), verbes à conjuguer, QCM grammaire (exemples p.103+). 2️⃣ <em>Listening (15 pts)</em> : 2 exercices (cf poly p.30, p.36-37, p.105 — médian A26 sur Moodle). 3️⃣ <em>Writing (30 pts)</em> : rédiger un email de 250 mots (±10%). Modalités UV : TD 20%, entretiens 20%, médian 20%, final 40% — moyenne requise à chaque modalité.',
     tasks: [
-      { id: 'la13-1', label: 'Réviser vocabulaire & grammaire LA13', done: false },
-      { id: 'la13-2', label: 'Préparer les thèmes abordés en TD', done: false },
-      { id: 'la13-3', label: 'Vérifier la salle (voir convocation ENT)', done: false },
+      { id: 'la13-1', label: 'Réviser chapitres 1 à 5 du polycopié', done: false },
+      { id: 'la13-2', label: 'Réviser Use of English : style interrogatif, word formation, prépositions, temps verbaux', done: false },
+      { id: 'la13-3', label: 'S\'entraîner au Listening (exercices poly p.30, 36-37, 105 + médian A26 sur Moodle)', done: false },
+      { id: 'la13-4', label: 'S\'entraîner à rédiger un email formel de 250 mots', done: false },
+      { id: 'la13-5', label: 'Consulter Moodle section "Former exams" pour les annales corrigées', done: false },
+      { id: 'la13-6', label: 'Vérifier la salle (voir convocation ENT)', done: false },
     ]
   },
   {
@@ -415,15 +433,16 @@ const DEADLINES = [
   {
     id: 'tn05-soutenance',
     title: '🎤 Soutenance de stage TN05',
-    date: '2026-05-15',
+    date: '2026-05-19',
     time: null,
     category: 'Stage',
-    description: 'Dates de soutenance à confirmer — courant mai/juin 2026, après les médians. Selon email TN05 du 13/03 : inscription via ENT sur un créneau de soutenance le moment voulu. Un mail détaillé sera envoyé dès que possible (quelques semaines).',
+    description: 'MAJ (email du 23/03) : Les soutenances TN05 se déroulent à l\'UTC <strong>entre le 19 mai et le 5 juin 2026</strong>. Chaque session = 6 étudiants + 2 membres du jury (1h30 de présence obligatoire). ⚠️ S\'inscrire sur ENT avant le 15 avril 12h00 ! Après cette date, attribution automatique. Rapport à envoyer par PDF au Président du jury (lettre P) après le 15 avril — demander confirmation de réception.',
     tasks: [
-      { id: 'sout-1', label: 'Attendre mail de confirmation des créneaux de soutenance (via ENT)', done: false },
-      { id: 'sout-2', label: 'S\'inscrire sur un créneau via l\'ENT dès ouverture', done: false },
-      { id: 'sout-3', label: 'Préparer présentation orale du stage', done: false },
-      { id: 'sout-4', label: 'Préparer slides de soutenance', done: false },
+      { id: 'sout-1', label: '⚡ S\'inscrire sur ENT avant le 15 avril 12h00 (voir deadline inscription)', done: false },
+      { id: 'sout-2', label: 'Attendre le mail automatique de convocation post-inscription', done: false },
+      { id: 'sout-3', label: 'Envoyer rapport PDF au Président du jury après le 15 avril', done: false },
+      { id: 'sout-4', label: 'Préparer présentation orale du stage', done: false },
+      { id: 'sout-5', label: 'Préparer slides de soutenance', done: false },
     ]
   },
   {
