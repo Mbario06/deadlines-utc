@@ -310,15 +310,15 @@
 
 <div class="stats-bar">
   <div class="stat-card urgent">
-    <div class="val" id="stat-urgent">1</div>
+    <div class="val" id="stat-urgent">2</div>
     <div class="lbl">🚨 Urgent (&lt;7j)</div>
   </div>
   <div class="stat-card soon">
-    <div class="val" id="stat-soon">2</div>
+    <div class="val" id="stat-soon">4</div>
     <div class="lbl">⚠️ Bientôt (&lt;30j)</div>
   </div>
   <div class="stat-card later">
-    <div class="val" id="stat-later">3</div>
+    <div class="val" id="stat-later">7</div>
     <div class="lbl">📌 À venir</div>
   </div>
   <div class="stat-card done">
@@ -355,6 +355,20 @@
 <script>
 const DEADLINES = [
   {
+    id: 'tn05-fiche-eval',
+    title: '⚠️ Fiche d\'évaluation stage TN05 — URGENTE',
+    date: '2026-03-31',
+    time: null,
+    category: 'Stage',
+    description: '🚨 RELANCE MULTIPLE (emails TN05 du 26/03 + tuteur du 28/03) : Le service des stages UTC N\'A PAS reçu la fiche d\'évaluation entreprise. Sans cette fiche, l\'UV ne peut pas être validée. <strong>⚡ ACTION URGENTE</strong> : Contacter le tuteur entreprise IMMÉDIATEMENT pour lui demander de remplir et envoyer la fiche à <a href="mailto:lauriane.dupuis@utc.fr">lauriane.dupuis@utc.fr</a>.',
+    tasks: [
+      { id: 'tn05-fiche-1', label: '⚡ URGENT : Contacter le tuteur entreprise pour la fiche d\'évaluation', done: false },
+      { id: 'tn05-fiche-2', label: 'Renvoyer la fiche au tuteur si besoin (il peut ne plus l\'avoir)', done: false },
+      { id: 'tn05-fiche-3', label: 'Tuteur doit envoyer fiche à : lauriane.dupuis@utc.fr', done: false },
+      { id: 'tn05-fiche-4', label: 'Confirmer au service des stages que c\'est en cours', done: false },
+    ]
+  },
+  {
     id: 'tn05-rapport',
     title: '📄 Rapport de stage TN05',
     date: '2026-03-17',
@@ -364,7 +378,7 @@ const DEADLINES = [
     tasks: [
       { id: 'tn05-1', label: 'Rédiger / finaliser le rapport', done: false },
       { id: 'tn05-2', label: 'Faire signer la dernière page par le tuteur entreprise', done: false },
-      { id: 'tn05-3', label: 'Faire remplir la fiche d\'appréciation par le tuteur entreprise', done: false },
+      { id: 'tn05-3', label: '⚡ Faire remplir et envoyer la fiche d\'appréciation par le tuteur entreprise (voir relance urgente)', done: false },
       { id: 'tn05-4', label: '📬 Attendre le 15 avril (jurys susceptibles d\'évoluer jusqu\'à cette date)', done: false },
       { id: 'tn05-5', label: 'Envoyer rapport PDF par mail au Président du jury (lettre P après son nom)', done: false },
       { id: 'tn05-6', label: 'Demander confirmation de réception à l\'EC correcteur', done: false },
@@ -415,19 +429,58 @@ const DEADLINES = [
     ]
   },
   {
-    id: 'medians-utc',
-    title: '🧪 Médians UTC — Tous les cours',
+    id: 'oreal-visite',
+    title: '🏭 Visite usines L\'Oréal — Bachelor IDM',
+    date: '2026-04-14',
+    time: null,
+    category: 'IDM',
+    description: '🆕 NEW (email Baya Weber du 27/03) : Visite des usines L\'Oréal le <strong>14 avril 2026</strong> dans le cadre du Bachelor IDM. <strong>⚡ ACTION REQUISE</strong> : Baya Weber attend ta pointure de chaussures de sécurité. Répondre dès que possible à <a href="mailto:baya.weber@utc.fr">baya.weber@utc.fr</a>.',
+    tasks: [
+      { id: 'oreal-1', label: '⚡ URGENT : Envoyer sa pointure de chaussures à baya.weber@utc.fr', done: false },
+      { id: 'oreal-2', label: 'Confirmer la présence à la visite', done: false },
+      { id: 'oreal-3', label: 'Organiser le trajet (covoiturage, transport UTC ?)', done: false },
+    ]
+  },
+  {
+    id: 'mt98-median',
+    title: '🧮 Médian MT98',
+    date: '2026-04-17',
+    time: '14:15',
+    category: 'MT98',
+    description: '🆕 NEW (planning médians Priscilla Velut du 27/03) : Médian MT98 (Mamadou KONE) le <strong>vendredi 17 avril de 14h15 à 15h45</strong> en salle <strong>BF A 520</strong>.',
+    tasks: [
+      { id: 'mt98-1', label: 'Réviser le cours MT98', done: false },
+      { id: 'mt98-2', label: 'Faire les exercices d\'entraînement', done: false },
+      { id: 'mt98-3', label: 'Salle : BF A 520 — vendredi 17 avril 14h15', done: false },
+    ]
+  },
+  {
+    id: 'ge28-median',
+    title: '🏗️ Médian GE28',
     date: '2026-04-27',
+    time: '07:45',
+    category: 'GE28',
+    description: '🆕 NEW (planning médians Priscilla Velut du 27/03) : Médian GE28 (Frédéric HUET) le <strong>lundi 27 avril de 7h45 à 9h15</strong> en salle <strong>BF A 608</strong>.',
+    tasks: [
+      { id: 'ge28-1', label: 'Réviser le cours GE28', done: false },
+      { id: 'ge28-2', label: 'Faire les exercices d\'entraînement', done: false },
+      { id: 'ge28-3', label: 'Salle : BF A 608 — lundi 27 avril 7h45 (tôt !)', done: false },
+    ]
+  },
+  {
+    id: 'medians-utc',
+    title: '🧪 Médians UTC — Semaine des médians P26',
+    date: '2026-04-15',
     time: null,
     category: 'Examens',
-    description: 'Semaine des médians UTC à partir du 28 avril. Concerne : MT98, NF22, GE28, ED03, IS00, TC00. Les médians commencent après les vacances d\'avril (21 avril = vacances UTC).',
+    description: '🆕 MAJ (planning officiel SME du 27/03) : Semaine des médians UTC P26 : <strong>mercredi 15 au vendredi 17 avril</strong> + <strong>lundi 27 et mardi 28 avril</strong>. Planning détaillé : MT98 = vendredi 17/04 14h15 BF A 520 | GE28 = lundi 27/04 7h45 BF A 608. NF22, IS00, TC00, ED03 : vérifier sur Moodle (pas dans le planning SME officiel).',
     tasks: [
-      { id: 'med-1', label: 'Réviser MT98', done: false },
-      { id: 'med-2', label: 'Réviser NF22', done: false },
-      { id: 'med-3', label: 'Réviser GE28', done: false },
-      { id: 'med-4', label: 'Réviser IS00 (MOOC)', done: false },
-      { id: 'med-5', label: 'Réviser TC00', done: false },
-      { id: 'med-6', label: 'Vérifier planning médians sur Moodle', done: false },
+      { id: 'med-1', label: 'Réviser MT98 (médian vendredi 17/04 14h15)', done: false },
+      { id: 'med-2', label: 'Réviser NF22 (vérifier date sur Moodle)', done: false },
+      { id: 'med-3', label: 'Réviser GE28 (médian lundi 27/04 7h45)', done: false },
+      { id: 'med-4', label: 'Réviser IS00 (MOOC — vérifier évaluation)', done: false },
+      { id: 'med-5', label: 'Réviser TC00 (vérifier date sur Moodle)', done: false },
+      { id: 'med-6', label: '✅ Planning officiel SME reçu le 27/03 — MT98 et GE28 programmés', done: true },
     ]
   },
   {
