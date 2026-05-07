@@ -418,14 +418,12 @@ const DEADLINES = [
     date: '2026-04-09',
     time: '19:00',
     category: 'LA13',
-    description: 'MAJ (email Lynne Forest du 25/03) : Médian LA13 le <strong>jeudi 9 avril de 19h00 à 20h30</strong>. Aucune dérogation accordée. Porte sur les <strong>5 premiers chapitres du polycopié</strong>. Format en 3 parties : 1️⃣ <em>Use of English (35 pts)</em> : style interrogatif, vocabulaire (word formation + prepositions), verbes à conjuguer, QCM grammaire (exemples p.103+). 2️⃣ <em>Listening (15 pts)</em> : 2 exercices (cf poly p.30, p.36-37, p.105 — médian A26 sur Moodle). 3️⃣ <em>Writing (30 pts)</em> : rédiger un email de 250 mots (±10%). Modalités UV : TD 20%, entretiens 20%, médian 20%, final 40% — moyenne requise à chaque modalité.',
+    description: '✅ Médian passé le 9 avril. MAJ (emails Lynne Forest 04/05) : Note obtenue : <strong>39,5/80</strong> (moyenne promo : 47,1/80). ⚠️ Note en-dessous de la moyenne — à compenser au final (40%). Permanence consultation copies : <strong>lundi 11 mai, 18h30–19h45, salle A300</strong>. Rappel modalités UV : TD 20%, entretiens 20%, médian 20%, final 40% — moyenne requise à chaque modalité.',
     tasks: [
-      { id: 'la13-1', label: 'Réviser chapitres 1 à 5 du polycopié', done: false },
-      { id: 'la13-2', label: 'Réviser Use of English : style interrogatif, word formation, prépositions, temps verbaux', done: false },
-      { id: 'la13-3', label: 'S\'entraîner au Listening (exercices poly p.30, 36-37, 105 + médian A26 sur Moodle)', done: false },
-      { id: 'la13-4', label: 'S\'entraîner à rédiger un email formel de 250 mots', done: false },
-      { id: 'la13-5', label: 'Consulter Moodle section "Former exams" pour les annales corrigées', done: false },
-      { id: 'la13-6', label: 'Vérifier la salle (voir convocation ENT)', done: false },
+      { id: 'la13-1', label: '✅ Médian LA13 passé le 9 avril', done: true },
+      { id: 'la13-2', label: '✅ Note médian : 39,5/80 (moyenne promo 47,1/80)', done: true },
+      { id: 'la13-3', label: '⚠️ Consulter sa copie — permanence lundi 11 mai 18h30-19h45, salle A300', done: false },
+      { id: 'la13-4', label: 'Préparer le final LA13 (40% de la note — doit avoir la moyenne)', done: false },
     ]
   },
   {
@@ -461,11 +459,12 @@ const DEADLINES = [
     date: '2026-04-17',
     time: '14:15',
     category: 'MT98',
-    description: '✅ Médian passé le 17 avril. MAJ (email Nathalie Darène 22/04 + Andre Harnist 28/04) : À partir du <strong>30 avril</strong>, Andre Harnist reprend le cours MT98 (contenu MT99). Même horaires et salles : lun 14h15 BF A 200, jeu 10h15 BF A 518, jeu 16h30 BF A 518, ven 14h15 BF A 200. Le code UV reste MT98 sur les emplois du temps.',
+    description: '✅ Médian passé le 17 avril. MAJ (email Nathalie Darène 22/04 + Andre Harnist 28/04 + KONE Mamadou 04/05) : Résultat MT98 : <strong>D — ADMIS</strong>. À partir du <strong>30 avril</strong>, Andre Harnist reprend le cours MT98 (contenu MT99). Même horaires et salles : lun 14h15 BF A 200, jeu 10h15 BF A 518, jeu 16h30 BF A 518, ven 14h15 BF A 200. Le code UV reste MT98 sur les emplois du temps.',
     tasks: [
       { id: 'mt98-1', label: '✅ Médian MT98 passé le 17 avril', done: true },
-      { id: 'mt98-2', label: 'Suivre les cours MT99 (Andre Harnist) à partir du 30 avril', done: false },
-      { id: 'mt98-3', label: 'Salle : BF A 520 — vendredi 17 avril 14h15 (passé)', done: true },
+      { id: 'mt98-2', label: '✅ Résultat MT98 : D — ADMIS (email 04/05)', done: true },
+      { id: 'mt98-3', label: 'Suivre les cours MT99 (Andre Harnist) à partir du 30 avril', done: false },
+      { id: 'mt98-4', label: 'Salle : BF A 520 — vendredi 17 avril 14h15 (passé)', done: true },
     ]
   },
   {
@@ -495,6 +494,20 @@ const DEADLINES = [
       { id: 'med-4', label: 'Réviser IS00 (MOOC — vérifier évaluation)', done: false },
       { id: 'med-5', label: 'Réviser TC00 (vérifier date sur Moodle)', done: false },
       { id: 'med-6', label: '✅ Planning officiel SME reçu le 27/03 — MT98 et GE28 programmés', done: true },
+    ]
+  },
+  {
+    id: 'is00-etude-document',
+    title: '📄 IS00 — Étude de document (Examen)',
+    date: '2026-05-19',
+    time: '18:45',
+    category: 'IS00',
+    description: '🆕 NEW (email Baouch Yacine du 06/05) : Épreuve IS00 "Étude de document" le <strong>mardi 19 mai, de 18h45 à 20h15</strong> (20h45 pour tiers-temps). Salle : <strong>FA520 à BF</strong>. Un numéro d\'identification individuel sera affiché sur Moodle <strong>au plus tard la veille</strong> — à reporter sur la copie. Des exemples de sujets sont sur Moodle. Des documents seront fournis le jour de l\'épreuve. La démarche centrale : prise de recul, analyse et articulation avec les contenus du cours.',
+    tasks: [
+      { id: 'is00-1', label: 'Vérifier son numéro d\'identification sur Moodle (affiché la veille)', done: false },
+      { id: 'is00-2', label: 'Consulter les exemples de sujets sur Moodle IS00', done: false },
+      { id: 'is00-3', label: 'Réviser les concepts clés d\'IS00 (prise de recul, analyse, articulation)', done: false },
+      { id: 'is00-4', label: 'Salle FA520 BF — mardi 19 mai 18h45', done: false },
     ]
   },
   {
