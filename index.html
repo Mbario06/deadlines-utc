@@ -422,8 +422,8 @@ const DEADLINES = [
     tasks: [
       { id: 'la13-1', label: '✅ Médian LA13 passé le 9 avril', done: true },
       { id: 'la13-2', label: '✅ Note médian : 39,5/80 (moyenne promo 47,1/80)', done: true },
-      { id: 'la13-3', label: '⚠️ Consulter sa copie — permanence lundi 11 mai 18h30-19h45, salle A300', done: false },
-      { id: 'la13-4', label: 'Préparer le final LA13 (40% de la note — doit avoir la moyenne)', done: false },
+      { id: 'la13-3', label: '✅ Consultation copie LA13 — lundi 11 mai (passée)', done: true },
+      { id: 'la13-4', label: '⚡ Préparer le final LA13 (40% de la note — doit avoir la moyenne)', done: false },
     ]
   },
   {
@@ -473,11 +473,12 @@ const DEADLINES = [
     date: '2026-04-27',
     time: '07:45',
     category: 'GE28',
-    description: '🆕 NEW (planning médians Priscilla Velut du 27/03) : Médian GE28 (Frédéric HUET) le <strong>lundi 27 avril de 7h45 à 9h15</strong> en salle <strong>BF A 608</strong>.',
+    description: '🆕 NEW (planning médians Priscilla Velut du 27/03) : Médian GE28 (Frédéric HUET) le <strong>lundi 27 avril de 7h45 à 9h15</strong> en salle <strong>BF A 608</strong>. ✅ Médian passé le 27 avril.',
     tasks: [
-      { id: 'ge28-1', label: 'Réviser le cours GE28', done: false },
-      { id: 'ge28-2', label: 'Faire les exercices d\'entraînement', done: false },
-      { id: 'ge28-3', label: 'Salle : BF A 608 — lundi 27 avril 7h45 (tôt !)', done: false },
+      { id: 'ge28-1', label: '✅ Réviser le cours GE28', done: true },
+      { id: 'ge28-2', label: '✅ Faire les exercices d\'entraînement', done: true },
+      { id: 'ge28-3', label: '✅ Salle : BF A 608 — lundi 27 avril 7h45 (passé)', done: true },
+      { id: 'ge28-4', label: '📋 Préparer le final GE28 (23-30 juin)', done: false },
     ]
   },
   {
@@ -498,31 +499,31 @@ const DEADLINES = [
   },
   {
     id: 'is00-etude-document',
-    title: '📄 IS00 — Étude de document (Examen)',
+    title: '📄 IS00 — Étude de document (Examen) — DEMAIN',
     date: '2026-05-19',
     time: '18:45',
     category: 'IS00',
-    description: '🆕 NEW (email Baouch Yacine du 06/05) : Épreuve IS00 "Étude de document" le <strong>mardi 19 mai, de 18h45 à 20h15</strong> (20h45 pour tiers-temps). Salle : <strong>FA520 à BF</strong>. Un numéro d\'identification individuel sera affiché sur Moodle <strong>au plus tard la veille</strong> — à reporter sur la copie. Des exemples de sujets sont sur Moodle. Des documents seront fournis le jour de l\'épreuve. La démarche centrale : prise de recul, analyse et articulation avec les contenus du cours.',
+    description: '🆕 NEW (email Baouch Yacine du 06/05) : Épreuve IS00 "Étude de document" le <strong>mardi 19 mai, de 18h45 à 20h15</strong> (20h45 pour tiers-temps). Salle : <strong>FA520 à BF</strong>. Un numéro d\'identification individuel sera affiché sur Moodle <strong>au plus tard la veille</strong> — à reporter sur la copie. Des exemples de sujets sont sur Moodle. Des documents seront fournis le jour de l\'épreuve. La démarche centrale : prise de recul, analyse et articulation avec les contenus du cours. ⚠️ DEMAIN — VÉRIFIER MOODLE POUR NUMÉRO ID.',
     tasks: [
-      { id: 'is00-1', label: 'Vérifier son numéro d\'identification sur Moodle (affiché la veille)', done: false },
-      { id: 'is00-2', label: 'Consulter les exemples de sujets sur Moodle IS00', done: false },
-      { id: 'is00-3', label: 'Réviser les concepts clés d\'IS00 (prise de recul, analyse, articulation)', done: false },
-      { id: 'is00-4', label: 'Salle FA520 BF — mardi 19 mai 18h45', done: false },
+      { id: 'is00-1', label: '⚡ Vérifier son numéro d\'identification sur Moodle (affiché la veille — aujourd\'hui !)', done: false },
+      { id: 'is00-2', label: '⚡ Consulter les exemples de sujets sur Moodle IS00', done: false },
+      { id: 'is00-3', label: '⚡ Réviser les concepts clés IS00 (prise de recul, analyse, articulation)', done: false },
+      { id: 'is00-4', label: '📌 Salle FA520 BF — mardi 19 mai 18h45 (demain)', done: false },
     ]
   },
   {
     id: 'tn05-soutenance',
-    title: '🎤 Soutenance de stage TN05',
+    title: '🎤 Soutenance de stage TN05 — DÈS DEMAIN (19 mai - 5 juin)',
     date: '2026-05-19',
     time: null,
     category: 'Stage',
-    description: 'MAJ (email du 23/03) : Les soutenances TN05 se déroulent à l\'UTC <strong>entre le 19 mai et le 5 juin 2026</strong>. Chaque session = 6 étudiants + 2 membres du jury (1h30 de présence obligatoire). ⚠️ S\'inscrire sur ENT avant le 15 avril 12h00 ! Après cette date, attribution automatique. Rapport à envoyer par PDF au Président du jury (lettre P) après le 15 avril — demander confirmation de réception.',
+    description: 'MAJ (email du 23/03) : Les soutenances TN05 se déroulent à l\'UTC <strong>entre le 19 mai et le 5 juin 2026</strong>. ⚠️ Inscription ENT fermée depuis le 15 avril — vérifier le créneau attribué. Rapport envoyé à Badr Kaoui et confirmé reçu. ⚠️ DERNIÈRE LIGNE DROITE : préparer la présentation orale + slides.',
     tasks: [
-      { id: 'sout-1', label: '⚡ S\'inscrire sur ENT avant le 15 avril 12h00 (voir deadline inscription)', done: false },
-      { id: 'sout-2', label: 'Attendre le mail automatique de convocation post-inscription', done: false },
-      { id: 'sout-3', label: 'Envoyer rapport PDF au Président du jury après le 15 avril', done: false },
-      { id: 'sout-4', label: 'Préparer présentation orale du stage', done: false },
-      { id: 'sout-5', label: 'Préparer slides de soutenance', done: false },
+      { id: 'sout-1', label: '✅ Inscription ENT faite avant le 15 avril', done: true },
+      { id: 'sout-2', label: '✅ Rapport envoyé au Président du jury (Badr Kaoui) — confirmé reçu', done: true },
+      { id: 'sout-3', label: '⚡ Vérifier son créneau de soutenance sur ENT (19 mai - 5 juin)', done: false },
+      { id: 'sout-4', label: '⚡ Préparer présentation orale du stage', done: false },
+      { id: 'sout-5', label: '⚡ Préparer slides de soutenance', done: false },
     ]
   },
   {
@@ -570,13 +571,13 @@ const DEADLINES = [
   },
   {
     id: 'zoom-depart-international',
-    title: '🌍 ZOOM Départ International P27 — OBLIGATOIRE',
+    title: '🌍 ZOOM Départ International P27 — OBLIGATOIRE — DEMAIN 12h30',
     date: '2026-05-19',
     time: '12:30',
     category: 'IDM',
-    description: '🆕 NEW (email DRI/Erica Arruda Patte du 16/04, relayé par Nathalie Darène 20/04) : Présentation en ligne <strong>OBLIGATOIRE</strong> de la procédure de mobilité internationale pour les départs à l\'étranger S2 (P27). Le <strong>mardi 19 mai de 12h30 à 13h30</strong>. Zoom : <a href="https://utc-fr.zoom.us/my/joanna.daaboul">https://utc-fr.zoom.us/my/joanna.daaboul</a>. ⚠️ <strong>Si tu ne te connectes pas, la DRI et Nathalie Darène considéreront que tu as décidé de NE PAS partir à l\'international.</strong> La session tombe pendant ED03 — Nathalie Darène s\'arrange avec l\'enseignante pour libérer les étudiants. Tu peux suivre le ZOOM depuis la salle de cours.',
+    description: '🆕 NEW (email DRI/Erica Arruda Patte du 16/04, relayé par Nathalie Darène 20/04) : Présentation en ligne <strong>OBLIGATOIRE</strong> de la procédure de mobilité internationale pour les départs à l\'étranger S2 (P27). Le <strong>mardi 19 mai de 12h30 à 13h30</strong>. Zoom : <a href="https://utc-fr.zoom.us/my/joanna.daaboul">https://utc-fr.zoom.us/my/joanna.daaboul</a>. ⚠️ <strong>Si tu ne te connectes pas, la DRI et Nathalie Darène considéreront que tu as décidé de NE PAS partir à l\'international.</strong> La session tombe pendant ED03 — Nathalie Darène s\'arrange avec l\'enseignante pour libérer les étudiants. Tu peux suivre le ZOOM depuis la salle de cours. ⚠️ DEMAIN 12h30 — NE PAS OUBLIER !',
     tasks: [
-      { id: 'zoom-int-1', label: '⚡ Se connecter le mardi 19 mai à 12h30 — OBLIGATOIRE pour départ international', done: false },
+      { id: 'zoom-int-1', label: '⚡ Se connecter demain mardi 19 mai à 12h30 — OBLIGATOIRE pour départ international', done: false },
       { id: 'zoom-int-2', label: 'Lien Zoom : https://utc-fr.zoom.us/my/joanna.daaboul', done: false },
       { id: 'zoom-int-3', label: 'Préparer ses questions sur la procédure de candidature, la charte internationale', done: false },
     ]
