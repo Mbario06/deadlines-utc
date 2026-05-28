@@ -413,16 +413,29 @@ const DEADLINES = [
     ]
   },
   {
+    id: 'la13-essay-td9',
+    title: '✍️ LA13 — Essay in Class (TD9)',
+    date: '2026-05-14',
+    time: null,
+    category: 'LA13',
+    description: '⚠️ PASSÉ (email Lynne Forest du 12/05) : Évaluation écrite 300-350 mots en 45 min pendant le TD9 le <strong>jeudi 14 mai 2026</strong>. Thèmes possibles : TD6 (Digital Twins), TD7 (Green Issues), TD8 (Collaborative Consumption). Non listé dans le dashboard avant ce scan.',
+    tasks: [
+      { id: 'la13-essay-1', label: '⚠️ Essay TD9 passé le 14 mai — vérifier si fait', done: false },
+      { id: 'la13-essay-2', label: 'Préparer le final LA13 (40%) : 27 mai ? Vérifier date exacte', done: false },
+    ]
+  },
+  {
     id: 'la13-median',
     title: '📝 Médian LA13 — Anglais',
     date: '2026-04-09',
     time: '19:00',
     category: 'LA13',
-    description: '✅ Médian passé le 9 avril. MAJ (emails Lynne Forest 04/05) : Note obtenue : <strong>39,5/80</strong> (moyenne promo : 47,1/80). ⚠️ Note en-dessous de la moyenne — à compenser au final (40%). Permanence consultation copies : <strong>lundi 11 mai, 18h30–19h45, salle A300</strong>. Rappel modalités UV : TD 20%, entretiens 20%, médian 20%, final 40% — moyenne requise à chaque modalité.',
+    description: '✅ Médian passé le 9 avril. MAJ (emails Lynne Forest 04/05) : Note obtenue : <strong>39,5/80</strong> (moyenne promo : 47,1/80). ⚠️ Note en-dessous de la moyenne — à compenser au final (40%). ✅ Consultation copies : lundi 11 mai 18h30-19h45 salle A300 (passée). 2e session consultation : <strong>mercredi 20 mai 17h30-19h30</strong> (email Lynne Forest 13/05) pour les absents du 11 mai. Rappel modalités UV : TD 20%, entretiens 20%, médian 20%, final 40% — moyenne requise à chaque modalité.',
     tasks: [
       { id: 'la13-1', label: '✅ Médian LA13 passé le 9 avril', done: true },
       { id: 'la13-2', label: '✅ Note médian : 39,5/80 (moyenne promo 47,1/80)', done: true },
       { id: 'la13-3', label: '✅ Consultation copie LA13 — lundi 11 mai (passée)', done: true },
+      { id: 'la13-3b', label: '📋 2e session consultation copies — mercredi 20 mai 17h30-19h30 (si pas venu le 11)', done: false },
       { id: 'la13-4', label: '⚡ Préparer le final LA13 (40% de la note — doit avoir la moyenne)', done: false },
     ]
   },
@@ -468,6 +481,18 @@ const DEADLINES = [
     ]
   },
   {
+    id: 'mt98-median-chap11',
+    title: '📝 MT98 — Médian Chapitre 11 (Andre Harnist)',
+    date: '2026-05-28',
+    time: '10:15',
+    category: 'MT98',
+    description: '🆕 NOUVEAU (email Andre Harnist du 15/05) : Deuxième médian MT98 (Chapitre 11) le <strong>jeudi 28 mai 2026 à 10h15</strong>, salle <strong>A518</strong>. Durée : 1h30. Programme : Chapitre 11 (cours d\\'Andre Harnist, repris depuis le 30 avril). ⚠️ J-3 — RÉVISER LE CHAPITRE 11.',
+    tasks: [
+      { id: 'mt98-c11-1', label: '⚡ Réviser le Chapitre 11 (Andre Harnist)', done: false },
+      { id: 'mt98-c11-2', label: '📌 Salle A518 — jeudi 28 mai 10h15 (durée 1h30)', done: false },
+    ]
+  },
+  {
     id: 'ge28-median',
     title: '🏗️ Médian GE28',
     date: '2026-04-27',
@@ -499,31 +524,30 @@ const DEADLINES = [
   },
   {
     id: 'is00-etude-document',
-    title: '📄 IS00 — Étude de document (Examen) — DEMAIN',
+    title: '📄 IS00 — Étude de document (Examen) — PASSÉ',
     date: '2026-05-19',
     time: '18:45',
     category: 'IS00',
-    description: '🆕 NEW (email Baouch Yacine du 06/05) : Épreuve IS00 "Étude de document" le <strong>mardi 19 mai, de 18h45 à 20h15</strong> (20h45 pour tiers-temps). Salle : <strong>FA520 à BF</strong>. Un numéro d\'identification individuel sera affiché sur Moodle <strong>au plus tard la veille</strong> — à reporter sur la copie. Des exemples de sujets sont sur Moodle. Des documents seront fournis le jour de l\'épreuve. La démarche centrale : prise de recul, analyse et articulation avec les contenus du cours. ⚠️ DEMAIN — VÉRIFIER MOODLE POUR NUMÉRO ID.',
+    description: '✅ PASSÉ (19 mai 2026, 18h45-20h15, FA520 BF). Numéro d identification : 139. Épreuve IS00 "Étude de document" — analyse de documents fournis le jour de l épreuve. Démarche centrale : prise de recul, analyse et articulation avec les contenus du cours.',
     tasks: [
-      { id: 'is00-1', label: '⚡ Vérifier son numéro d\'identification sur Moodle (affiché la veille — aujourd\'hui !)', done: false },
-      { id: 'is00-2', label: '⚡ Consulter les exemples de sujets sur Moodle IS00', done: false },
-      { id: 'is00-3', label: '⚡ Réviser les concepts clés IS00 (prise de recul, analyse, articulation)', done: false },
-      { id: 'is00-4', label: '📌 Salle FA520 BF — mardi 19 mai 18h45 (demain)', done: false },
+      { id: 'is00-1', label: '✅ Épreuve IS00 passée le 19 mai — FA520 BF', done: true },
+      { id: 'is00-2', label: '✅ Numéro ID 139 reporté sur la copie', done: true },
     ]
   },
   {
     id: 'tn05-soutenance',
-    title: '🎤 Soutenance de stage TN05 — DÈS DEMAIN (19 mai - 5 juin)',
-    date: '2026-05-19',
-    time: null,
+    title: '🎤 Soutenance de stage TN05 — 4 juin 15h30 BF A 600 ⚠️ PPT À ENVOYER',
+    date: '2026-06-04',
+    time: '15:30',
     category: 'Stage',
-    description: 'MAJ (email du 23/03) : Les soutenances TN05 se déroulent à l\'UTC <strong>entre le 19 mai et le 5 juin 2026</strong>. ⚠️ Inscription ENT fermée depuis le 15 avril — vérifier le créneau attribué. Rapport envoyé à Badr Kaoui et confirmé reçu. ⚠️ DERNIÈRE LIGNE DROITE : préparer la présentation orale + slides.',
+    description: 'MAJ (emails Eliot Guine 21/05 + session 23/05) : La soutenance TN05 est fixée au <strong>jeudi 4 juin 2026 à 15h30</strong>, salle <strong>BF A 600</strong>. ⚠️ Le diaporama (PowerPoint/Google Slides) doit être envoyé à Badr Kaoui (badr.kaoui@utc.fr) <strong>avant le vendredi 29 mai 2026</strong> — URGENT (J-1). Eliot Guine a partagé un lien Google Slides du rapport. Présence obligatoire 15h30, durée variable par session.',
     tasks: [
       { id: 'sout-1', label: '✅ Inscription ENT faite avant le 15 avril', done: true },
       { id: 'sout-2', label: '✅ Rapport envoyé au Président du jury (Badr Kaoui) — confirmé reçu', done: true },
-      { id: 'sout-3', label: '⚡ Vérifier son créneau de soutenance sur ENT (19 mai - 5 juin)', done: false },
-      { id: 'sout-4', label: '⚡ Préparer présentation orale du stage', done: false },
-      { id: 'sout-5', label: '⚡ Préparer slides de soutenance', done: false },
+      { id: 'sout-3', label: '✅ Créneau confirmé : jeudi 4 juin 15h30 — BF A 600', done: true },
+      { id: 'sout-4', label: '⚡ ENVOYER le diaporama à Badr Kaoui AVANT le 29 MAI (J-1 !)', done: false },
+      { id: 'sout-5', label: '⚡ Finaliser les slides de soutenance', done: false },
+      { id: 'sout-6', label: '⚡ Préparer présentation orale (répéter)', done: false },
     ]
   },
   {
@@ -571,11 +595,11 @@ const DEADLINES = [
   },
   {
     id: 'zoom-depart-international',
-    title: '🌍 ZOOM Départ International P27 — OBLIGATOIRE — DEMAIN 12h30',
+    title: '🌍 ZOOM Départ International P27 — OBLIGATOIRE — PASSÉ (19 mai)',
     date: '2026-05-19',
     time: '12:30',
     category: 'IDM',
-    description: '🆕 NEW (email DRI/Erica Arruda Patte du 16/04, relayé par Nathalie Darène 20/04) : Présentation en ligne <strong>OBLIGATOIRE</strong> de la procédure de mobilité internationale pour les départs à l\'étranger S2 (P27). Le <strong>mardi 19 mai de 12h30 à 13h30</strong>. Zoom : <a href="https://utc-fr.zoom.us/my/joanna.daaboul">https://utc-fr.zoom.us/my/joanna.daaboul</a>. ⚠️ <strong>Si tu ne te connectes pas, la DRI et Nathalie Darène considéreront que tu as décidé de NE PAS partir à l\'international.</strong> La session tombe pendant ED03 — Nathalie Darène s\'arrange avec l\'enseignante pour libérer les étudiants. Tu peux suivre le ZOOM depuis la salle de cours. ⚠️ DEMAIN 12h30 — NE PAS OUBLIER !',
+    description: '✅ PASSÉ (19 mai 2026, 12h30-13h30). Présentation en ligne ZOOM de la procédure de mobilité internationale pour départs S2 (P27), organisée par la DRI/Erica Arruda Patte. Session obligatoire suivie depuis la salle ED03. Procédure de candidature et charte internationale présentées.',
     tasks: [
       { id: 'zoom-int-1', label: '⚡ Se connecter demain mardi 19 mai à 12h30 — OBLIGATOIRE pour départ international', done: false },
       { id: 'zoom-int-2', label: 'Lien Zoom : https://utc-fr.zoom.us/my/joanna.daaboul', done: false },
