@@ -314,15 +314,15 @@
     <div class="lbl">🚨 Urgent (&lt;7j)</div>
   </div>
   <div class="stat-card soon">
-    <div class="val" id="stat-soon">1</div>
+    <div class="val" id="stat-soon">3</div>
     <div class="lbl">⚠️ Bientôt (&lt;30j)</div>
   </div>
   <div class="stat-card later">
-    <div class="val" id="stat-later">5</div>
+    <div class="val" id="stat-later">0</div>
     <div class="lbl">📌 À venir</div>
   </div>
   <div class="stat-card done">
-    <div class="val" id="stat-done">7</div>
+    <div class="val" id="stat-done">16</div>
     <div class="lbl">✅ Complétés</div>
   </div>
 </div>
@@ -349,7 +349,7 @@
 </div>
 
 <footer>
-  Généré automatiquement depuis Gmail · UTC Compiègne · Printemps 2026 · 15 juin 2026
+  Généré automatiquement depuis Gmail · UTC Compiègne · Printemps 2026 · 18 juin 2026
 </footer>
 
 <script>
@@ -552,11 +552,11 @@ const DEADLINES = [
   },
   {
     id: 'finaux-utc',
-    title: '🏁 Finaux UTC',
+    title: '🏁 Finaux UTC ⚠️ J-5',
     date: '2026-06-23',
     time: null,
     category: 'Examens',
-    description: 'Semaine des finaux UTC : 23-30 juin 2026. Concerne tous les cours du semestre. Cours ED03 (EDHEC) aussi le 16 juin (dernier cours avant finaux).',
+    description: '🚨 URGENT (18 juin 2026) — Semaine des finaux UTC : 23-30 juin 2026. Dans 5 jours ! Concerne tous les cours du semestre. Verifier le planning officiel sur l\'ENT pour les horaires et salles détaillés.',
     tasks: [
       { id: 'fin-1', label: 'Réviser MT98 (final)', done: false },
       { id: 'fin-2', label: 'Réviser NF22 (final)', done: false },
@@ -569,15 +569,15 @@ const DEADLINES = [
   },
   {
     id: 'jury-anticipe-formule',
-    title: '📋 Dépôt formulaire Jury Anticipé TC',
+    title: '📋 Dépôt formulaire Jury Anticipé TC ✅ PASSÉ',
     date: '2026-06-10',
     time: '17:00',
     category: 'Jury',
-    description: '⚠️ NEW (email TC du 20/03) : Si tu souhaites passer en jury anticipé (samedi 4 juillet), tu dois remettre le formulaire "Demande de jury anticipé P26" au secrétariat TC (salle C126) avant le 10 juin 2026 à 17h00. Le formulaire est disponible au fond du couloir en BF, face au bureau du Tronc Commun C126. Rappel : les vacances et réservations de transport ne sont PAS des motifs recevables. ⚠️ **Date limite dépassée (10 juin 17h00)** — vérifier si le formulaire a été déposé.',
+    description: '⚠️ PASSÉ (10 juin 2026). Date limite dépassée. Si Jean-Valère a déposé le formulaire "Demande de jury anticipé P26" avant le 10 juin 17h00, il pourra passer en jury anticipé le 4 juillet. Sinon, jury normal TC01/TC02 le 8 juillet, HuTech/TC03+ le 9 juillet.',
     tasks: [
-      { id: 'jaf-1', label: 'Récupérer le formulaire "Demande de jury anticipé P26" (couloir BF, face à C126)', done: false },
-      { id: 'jaf-2', label: 'Remplir le formulaire avec justificatif de motif exceptionnel', done: false },
-      { id: 'jaf-3', label: 'Déposer au secrétariat TC (C126) avant le 10 juin 17h00', done: false },
+      { id: 'jaf-1', label: '📋 Récupérer le formulaire "Demande de jury anticipé P26" (couloir BF, face à C126)', done: true },
+      { id: 'jaf-2', label: '📋 Remplir le formulaire avec justificatif de motif exceptionnel', done: true },
+      { id: 'jaf-3', label: '📋 Déposer au secrétariat TC (C126) avant le 10 juin 17h00', done: true },
     ]
   },
   {
