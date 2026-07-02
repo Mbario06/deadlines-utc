@@ -310,11 +310,11 @@
 
 <div class="stats-bar">
   <div class="stat-card urgent">
-    <div class="val" id="stat-urgent">1</div>
+    <div class="val" id="stat-urgent">3</div>
     <div class="lbl">🚨 Urgent (&lt;7j)</div>
   </div>
   <div class="stat-card soon">
-    <div class="val" id="stat-soon">3</div>
+    <div class="val" id="stat-soon">0</div>
     <div class="lbl">⚠️ Bientôt (&lt;30j)</div>
   </div>
   <div class="stat-card later">
@@ -322,7 +322,7 @@
     <div class="lbl">📌 À venir</div>
   </div>
   <div class="stat-card done">
-    <div class="val" id="stat-done">16</div>
+    <div class="val" id="stat-done">17</div>
     <div class="lbl">✅ Complétés</div>
   </div>
 </div>
@@ -349,7 +349,7 @@
 </div>
 
 <footer>
-  Généré automatiquement depuis Gmail · UTC Compiègne · Printemps 2026 · 29 juin 2026
+  Généré automatiquement depuis Gmail · UTC Compiègne · Printemps 2026 · 2 juillet 2026
 </footer>
 
 <script>
@@ -552,19 +552,19 @@ const DEADLINES = [
   },
   {
     id: 'finaux-utc',
-    title: '🏁 Finaux UTC — Semaine du 23 au 30 juin (DERNIER JOUR)',
-    date: '2026-06-23',
+    title: '🏁 Finaux UTC — Semaine du 23 au 30 juin ✅ TERMINÉS',
+    date: '2026-06-30',
     time: null,
     category: 'Examens',
-    description: '🚨 DERNIER JOUR (29 juin 2026) — Semaine des finaux UTC : 23-30 juin 2026. Dernier jour de la semaine d\'examens ! Vérifier le planning officiel sur l\'ENT pour les horaires et salles détaillés.',
+'✅ TERMINÉS (23-30 juin 2026). Semaine des finaux UTC P26 passée. Résultats à vérifier sur l\\'ENT dans les semaines à venir. Prochaines échéances : Jury Anticipé TC (4 juillet), Jurys Bachelor IDM (6 et 10 juillet).'
     tasks: [
-      { id: 'fin-1', label: 'Réviser MT98 (final)', done: false },
-      { id: 'fin-2', label: 'Réviser NF22 (final)', done: false },
-      { id: 'fin-3', label: 'Réviser GE28 (final)', done: false },
-      { id: 'fin-4', label: 'Réviser ED03 Marketing (final)', done: false },
-      { id: 'fin-5', label: 'Réviser IS00 (final)', done: false },
-      { id: 'fin-6', label: 'Réviser TC00 (final)', done: false },
-      { id: 'fin-7', label: 'Réviser LA13 (final)', done: false },
+      { id: 'fin-1', label: '✅ MT98 — final passé', done: true },
+      { id: 'fin-2', label: '✅ NF22 — final passé', done: true },
+      { id: 'fin-3', label: '✅ GE28 — final passé', done: true },
+      { id: 'fin-4', label: '✅ ED03 Marketing — final passé', done: true },
+      { id: 'fin-5', label: '✅ IS00 — final passé', done: true },
+      { id: 'fin-6', label: '✅ TC00 — final passé', done: true },
+      { id: 'fin-7', label: '✅ LA13 — final passé', done: true },
     ]
   },
   {
@@ -582,15 +582,15 @@ const DEADLINES = [
   },
   {
     id: 'jury-anticipe-tc',
-    title: '⚖️ Jury Anticipé TC — P26',
+    title: '⚖️ Jury Anticipé TC — P26 — SAMEDI 4 JUILLET (J-2)',
     date: '2026-07-04',
     time: '08:00',
     category: 'Jury',
-    description: 'NEW (email TC du 20/03) : Jury anticipé P26 le samedi 4 juillet 2026 (matin, 8h–12h). Réservé aux étudiants dont la demande a été acceptée. Si demande refusée → jury normal : TC01/TC02 le 8 juillet, HuTech/TC03+ le 9 juillet. La convocation sera envoyée le vendredi 3 juillet dans l\'après-midi (après validation des évaluations par les responsables UV).',
+    description: '🚨 URGENT (2 juillet 2026) — Jury anticipé P26 ce samedi 4 juillet 2026 (matin, 8h-12h). Convocation envoyée par email le vendredi 3 juillet après-midi (après validation des évaluations par les responsables UV). Vérifier ses mails le 3 juillet ! Si demande refusée → jury normal : TC01/TC02 le 8 juillet, HuTech/TC03+ le 9 juillet.',
     tasks: [
-      { id: 'jat-1', label: 'Vérifier la réponse à ta demande de jury anticipé (email attendu le 3 juillet )', done: false },
-      { id: 'jat-2', label: 'Si convoqué : se présenter samedi 4 juillet 8h (lieu précisé par email)', done: false },
-      { id: 'jat-3', label: 'Si refusé : noter jury normal TC01/TC02 = 8 juillet, TC03+/HuTech = 9 juillet', done: false },
+      { id: 'jat-1', label: '📧 Vérifier la convocation par email le vendredi 3 juillet (DEMAIN !)', done: false },
+      { id: 'jat-2', label: '📍 Se présenter samedi 4 juillet à 08h00 (lieu précisé par email)', done: false },
+      { id: 'jat-3', label: '📋 Si refusé : noter jury normal TC01/TC02 = 8 juillet, TC03+/HuTech = 9 juillet', done: false },
     ]
   },
   {
