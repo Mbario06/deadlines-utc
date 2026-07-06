@@ -310,11 +310,11 @@
 
 <div class="stats-bar">
   <div class="stat-card urgent">
-    <div class="val" id="stat-urgent">3</div>
+    <div class="val" id="stat-urgent">1</div>
     <div class="lbl">🚨 Urgent (&lt;7j)</div>
   </div>
   <div class="stat-card soon">
-    <div class="val" id="stat-soon">0</div>
+    <div class="val" id="stat-soon">1</div>
     <div class="lbl">⚠️ Bientôt (&lt;30j)</div>
   </div>
   <div class="stat-card later">
@@ -322,7 +322,7 @@
     <div class="lbl">📌 À venir</div>
   </div>
   <div class="stat-card done">
-    <div class="val" id="stat-done">17</div>
+    <div class="val" id="stat-done">18</div>
     <div class="lbl">✅ Complétés</div>
   </div>
 </div>
@@ -349,7 +349,7 @@
 </div>
 
 <footer>
-  Généré automatiquement depuis Gmail · UTC Compiègne · Printemps 2026 · 2 juillet 2026
+  Généré automatiquement depuis Gmail · UTC Compiègne · Printemps 2026 · 6 juillet 2026
 </footer>
 
 <script>
@@ -556,7 +556,7 @@ const DEADLINES = [
     date: '2026-06-30',
     time: null,
     category: 'Examens',
-'✅ TERMINÉS (23-30 juin 2026). Semaine des finaux UTC P26 passée. Résultats à vérifier sur l\\'ENT dans les semaines à venir. Prochaines échéances : Jury Anticipé TC (4 juillet), Jurys Bachelor IDM (6 et 10 juillet).'
+'✅ TERMINÉS (23-30 juin 2026). Semaine des finaux UTC P26 passée. Résultats à vérifier sur l\'ENT dans les semaines à venir. Prochaines échéances : Jurys Bachelor IDM (6 et 10 juillet).'
     tasks: [
       { id: 'fin-1', label: '✅ MT98 — final passé', done: true },
       { id: 'fin-2', label: '✅ NF22 — final passé', done: true },
@@ -582,15 +582,15 @@ const DEADLINES = [
   },
   {
     id: 'jury-anticipe-tc',
-    title: '⚖️ Jury Anticipé TC — P26 — SAMEDI 4 JUILLET (J-2)',
+    title: '⚖️ Jury Anticipé TC — P26 — SAMEDI 4 JUILLET ✅ PASSÉ',
     date: '2026-07-04',
     time: '08:00',
     category: 'Jury',
-    description: '🚨 URGENT (2 juillet 2026) — Jury anticipé P26 ce samedi 4 juillet 2026 (matin, 8h-12h). Convocation envoyée par email le vendredi 3 juillet après-midi (après validation des évaluations par les responsables UV). Vérifier ses mails le 3 juillet ! Si demande refusée → jury normal : TC01/TC02 le 8 juillet, HuTech/TC03+ le 9 juillet.',
+    description: '✅ PASSÉ (4 juillet 2026). Jury anticipé P26 terminé. Si Jean-Valère a été admis, félicitations ! 🎉 Sinon, jury normal : TC01/TC02 le 8 juillet, HuTech/TC03+ le 9 juillet.',
     tasks: [
-      { id: 'jat-1', label: '📧 Vérifier la convocation par email le vendredi 3 juillet (DEMAIN !)', done: false },
-      { id: 'jat-2', label: '📍 Se présenter samedi 4 juillet à 08h00 (lieu précisé par email)', done: false },
-      { id: 'jat-3', label: '📋 Si refusé : noter jury normal TC01/TC02 = 8 juillet, TC03+/HuTech = 9 juillet', done: false },
+      { id: 'jat-1', label: '📧 Vérifier la convocation par email le vendredi 3 juillet', done: true },
+      { id: 'jat-2', label: '📍 Se présenter samedi 4 juillet à 08h00', done: true },
+      { id: 'jat-3', label: '📋 Si refusé : noter jury normal TC01/TC02 = 8 juillet, TC03+/HuTech = 9 juillet', done: true },
     ]
   },
   {
@@ -608,25 +608,25 @@ const DEADLINES = [
   },
   {
     id: 'jury-idm-1',
-    title: '📁 1er Jury Bachelor IDM (dossiers, sans étudiants)',
+    title: '📁 1er Jury Bachelor IDM (dossiers, sans étudiants) — AUJOURD\'HUI',
     date: '2026-07-06',
     time: '11:00',
     category: 'Jury',
-    description: 'NEW (email Nathalie Darène du 16/03) : Premier jury d\'études des dossiers Bachelor IDM P26, sans les étudiants, le lundi 6 juillet 2026 à 11h00. Pas de présence requise — le jury examine les dossiers académiques.',
+    description: 'NEW (email Nathalie Darène du 16/03) : Premier jury d\'études des dossiers Bachelor IDM P26, sans les étudiants, ce lundi 6 juillet 2026 à 11h00. Pas de présence requise — le jury examine les dossiers académiques. Résultats attendus dans la foulée pour savoir si convocation au 2ème jury (10 juillet).',
     tasks: [
-      { id: 'jidm1-1', label: 'Aucune action requise — jury sans étudiants', done: false },
-      { id: 'jidm1-2', label: 'Attendre la convocation au 2ème jury (si nécessaire)', done: false },
+      { id: 'jidm1-1', label: '✅ Aucune action requise — jury sans étudiants', done: true },
+      { id: 'jidm1-2', label: 'Attendre les résultats — possible convocation au 2ème jury (10 juillet)', done: false },
     ]
   },
   {
     id: 'jury-idm-2',
-    title: '🎓 2ème Jury Bachelor IDM (présence obligatoire si convoqué)',
+    title: '🎓 2ème Jury Bachelor IDM (présence obligatoire si convoqué) — J-4',
     date: '2026-07-10',
     time: null,
     category: 'Jury',
-    description: 'NEW (email Nathalie Darène du 16/03) : Deuxième jury Bachelor IDM P26 le vendredi 10 juillet 2026 (matin). Présence OBLIGATOIRE uniquement pour les étudiants convoqués. Penser à organiser l\'été en conséquence (voyages, bénévolat, Summer School...).',
+    description: 'NEW (email Nathalie Darène du 16/03) : Deuxième jury Bachelor IDM P26 le vendredi 10 juillet 2026 (matin). Présence OBLIGATOIRE uniquement pour les étudiants convoqués. Résultats du 1er jury (6 juillet) détermineront la convocation. Penser à organiser l\'été en conséquence (voyages, bénévolat, Summer School...).',
     tasks: [
-      { id: 'jidm2-1', label: 'Attendre convocation après le 1er jury (6 juillet)', done: false },
+      { id: 'jidm2-1', label: '📋 Attendre les résultats du 1er jury (6 juillet) — convocation si nécessaire', done: false },
       { id: 'jidm2-2', label: 'Si convoqué : se présenter vendredi 10 juillet (matin)', done: false },
       { id: 'jidm2-3', label: 'Bloquer le 10 juillet dans l\'agenda (ne pas réserver voyages avant cette date)', done: false },
     ]
