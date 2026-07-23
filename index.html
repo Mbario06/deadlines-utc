@@ -349,7 +349,7 @@
 </div>
 
 <footer>
-  Généré automatiquement depuis Gmail · UTC Compiègne · Printemps 2026 · 6 juillet 2026
+  Généré automatiquement depuis Gmail · UTC Compiègne · Printemps 2026 · 23 juillet 2026
 </footer>
 
 <script>
@@ -556,7 +556,7 @@ const DEADLINES = [
     date: '2026-06-30',
     time: null,
     category: 'Examens',
-'✅ TERMINÉS (23-30 juin 2026). Semaine des finaux UTC P26 passée. Résultats à vérifier sur l\'ENT dans les semaines à venir. Prochaines échéances : Jurys Bachelor IDM (6 et 10 juillet).'
+    description: '✅ TERMINÉS (23-30 juin 2026). Semaine des finaux UTC P26 passée. Résultats à vérifier sur l\'ENT dans les semaines à venir. Prochaines échéances : Jurys Bachelor IDM (6 et 10 juillet).',
     tasks: [
       { id: 'fin-1', label: '✅ MT98 — final passé', done: true },
       { id: 'fin-2', label: '✅ NF22 — final passé', done: true },
@@ -608,27 +608,54 @@ const DEADLINES = [
   },
   {
     id: 'jury-idm-1',
-    title: '📁 1er Jury Bachelor IDM (dossiers, sans étudiants) — AUJOURD\'HUI',
+    title: '📁 Jury de suivi Bachelor IDM — poursuite normale ✅',
     date: '2026-07-06',
     time: '11:00',
     category: 'Jury',
-    description: 'NEW (email Nathalie Darène du 16/03) : Premier jury d\'études des dossiers Bachelor IDM P26, sans les étudiants, ce lundi 6 juillet 2026 à 11h00. Pas de présence requise — le jury examine les dossiers académiques. Résultats attendus dans la foulée pour savoir si convocation au 2ème jury (10 juillet).',
+    description: '✅ MAJ (email automatique UTC du 07/07) : décision du jury de suivi : <strong>poursuite normale</strong>. Premier jury d\'études des dossiers Bachelor IDM P26 tenu le lundi 6 juillet 2026 à 11h00, sans présence des étudiants.',
     tasks: [
       { id: 'jidm1-1', label: '✅ Aucune action requise — jury sans étudiants', done: true },
-      { id: 'jidm1-2', label: 'Attendre les résultats — possible convocation au 2ème jury (10 juillet)', done: false },
+      { id: 'jidm1-2', label: '✅ Décision reçue le 7 juillet : poursuite normale', done: true },
     ]
   },
   {
     id: 'jury-idm-2',
-    title: '🎓 2ème Jury Bachelor IDM (présence obligatoire si convoqué) — J-4',
+    title: '🎓 2ème Jury Bachelor IDM — non convoqué / poursuite normale ✅',
     date: '2026-07-10',
     time: null,
     category: 'Jury',
-    description: 'NEW (email Nathalie Darène du 16/03) : Deuxième jury Bachelor IDM P26 le vendredi 10 juillet 2026 (matin). Présence OBLIGATOIRE uniquement pour les étudiants convoqués. Résultats du 1er jury (6 juillet) détermineront la convocation. Penser à organiser l\'été en conséquence (voyages, bénévolat, Summer School...).',
+    description: '✅ MAJ (email automatique UTC du 07/07) : le jury de suivi a décidé une <strong>poursuite normale</strong>. Le deuxième jury du vendredi 10 juillet concernait uniquement les étudiants convoqués ; aucune action n\'était donc requise.',
     tasks: [
-      { id: 'jidm2-1', label: '📋 Attendre les résultats du 1er jury (6 juillet) — convocation si nécessaire', done: false },
-      { id: 'jidm2-2', label: 'Si convoqué : se présenter vendredi 10 juillet (matin)', done: false },
-      { id: 'jidm2-3', label: 'Bloquer le 10 juillet dans l\'agenda (ne pas réserver voyages avant cette date)', done: false },
+      { id: 'jidm2-1', label: '✅ Résultat reçu : poursuite normale', done: true },
+      { id: 'jidm2-2', label: '✅ Pas de convocation au deuxième jury', done: true },
+      { id: 'jidm2-3', label: '✅ Échéance passée sans action requise', done: true },
+    ]
+  },
+  {
+    id: 'reinscription-administrative-a26',
+    title: '🏫 Réinscription administrative UTC 2026-2027 — délai passé',
+    date: '2026-07-22',
+    time: null,
+    category: 'Inscriptions',
+    description: '🆕 NEW (email Corinne Helin / Xavier Fallard du 17/07) : le site de réinscription administrative était ouvert du <strong>7 au 22 juillet 2026 inclus</strong>. Après le 22 juillet, le site est fermé. La réinscription et le paiement des droits conditionnent l\'inscription pédagogique et la prise en compte des choix d\'UV.',
+    tasks: [
+      { id: 'reins-a26-1', label: 'Vérifier que la réinscription administrative 2026-2027 a bien été validée', done: false },
+      { id: 'reins-a26-2', label: 'Vérifier que les droits d\'inscription ont été réglés', done: false },
+      { id: 'reins-a26-3', label: 'Télécharger le certificat de scolarité après validation SAE', done: false },
+    ]
+  },
+  {
+    id: 'inscription-uv-a26',
+    title: '📚 Inscription aux UV — Automne 2026',
+    date: '2026-08-16',
+    time: null,
+    category: 'Inscriptions',
+    description: '🆕 NEW (email Priscilla Velut / SME du 09/07) : le site d\'inscription aux UV du semestre Automne 2026 est ouvert du <strong>9 juillet au dimanche 16 août 2026 inclus</strong>. Prérequis : réinscription administrative validée. Toutes les combinaisons d\'UV doivent être compatibles pour enregistrer les choix. Accès : ENT → Mon Dossier → Inscriptions → Inscription aux Enseignements.',
+    tasks: [
+      { id: 'uv-a26-1', label: 'Confirmer la validation de la réinscription administrative', done: false },
+      { id: 'uv-a26-2', label: 'Lire les notices d\'inscription sur l\'ENT', done: false },
+      { id: 'uv-a26-3', label: 'Choisir des combinaisons d\'UV compatibles', done: false },
+      { id: 'uv-a26-4', label: 'Enregistrer l\'inscription aux UV avant le 16 août inclus', done: false },
     ]
   },
 ];
@@ -776,7 +803,6 @@ function updateStats() {
 // Init
 const now = new Date();
 document.getElementById('current-date').textContent = `Aujourd'hui : ${now.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}`;
-document.getElementById('gen-date').textContent = now.toLocaleDateString('fr-FR');
 
 renderDeadlines();
 </script>
