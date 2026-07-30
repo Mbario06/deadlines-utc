@@ -349,7 +349,7 @@
 </div>
 
 <footer>
-  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 27 juillet 2026
+  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 30 juillet 2026
 </footer>
 
 <script>
@@ -650,12 +650,38 @@ const DEADLINES = [
     date: '2026-08-16',
     time: null,
     category: 'Inscriptions',
-    description: '🆕 NEW (email Priscilla Velut / SME du 09/07) : le site d\'inscription aux UV du semestre Automne 2026 est ouvert du <strong>9 juillet au dimanche 16 août 2026 inclus</strong>. Prérequis : réinscription administrative validée. Toutes les combinaisons d\'UV doivent être compatibles pour enregistrer les choix. Accès : ENT → Mon Dossier → Inscriptions → Inscription aux Enseignements.',
+    description: '🆕 MAJ (emails Priscilla Velut / SME des 27/07 et 09/07) : le site d\'inscription aux UV du semestre Automne 2026 est ouvert jusqu\'au <strong>dimanche 16 août 2026 inclus</strong>. Les vœux de Jean-Valère ont été enregistrés le 27 juillet : <strong>SY98, ED04, INF2, TN04, LA14 et SI11</strong> (remplacements : LG30, LA20, LG50). Ils seront traités pendant la régulation pédagogique du <strong>17 au 28 août</strong>. ⚠️ Aucune assistance informatique, technique ou pédagogique pendant la fermeture UTC du <strong>3 au 14 août</strong>. Accès : ENT → Mon Dossier → Inscriptions → Inscription aux Enseignements.',
     tasks: [
-      { id: 'uv-a26-1', label: 'Confirmer la validation de la réinscription administrative', done: false },
-      { id: 'uv-a26-2', label: 'Lire les notices d\'inscription sur l\'ENT', done: false },
-      { id: 'uv-a26-3', label: 'Choisir des combinaisons d\'UV compatibles', done: false },
-      { id: 'uv-a26-4', label: 'Enregistrer l\'inscription aux UV avant le 16 août inclus', done: false },
+      { id: 'uv-a26-1', label: 'Confirmer la validation de la réinscription administrative', done: true },
+      { id: 'uv-a26-2', label: 'Lire les notices d\'inscription sur l\'ENT', done: true },
+      { id: 'uv-a26-3', label: '✅ Vœux enregistrés le 27 juillet : SY98, ED04, INF2, TN04, LA14, SI11', done: true },
+      { id: 'uv-a26-4', label: 'Vérifier une dernière fois les vœux avant la fermeture du 16 août', done: false },
+    ]
+  },
+  {
+    id: 'regulation-pedagogique-a26',
+    title: '📋 Régulation pédagogique UV A26 — convocation possible',
+    date: '2026-08-28',
+    time: null,
+    category: 'Inscriptions',
+    description: '🆕 NEW (email automatique SME du 27/07) : les vœux d\'UV seront traités pendant la phase de régulation pédagogique du <strong>17 au 28 août 2026</strong>. La liste définitive des inscriptions sera envoyée à l\'issue de cette phase. ⚠️ Une convocation est possible le <strong>vendredi 28 août</strong> s\'il faut compléter pédagogiquement les inscriptions.',
+    tasks: [
+      { id: 'reg-a26-1', label: 'Surveiller les emails UTC pendant la régulation du 17 au 28 août', done: false },
+      { id: 'reg-a26-2', label: 'Vérifier la liste définitive des UV dès sa réception', done: false },
+      { id: 'reg-a26-3', label: 'Rester disponible le vendredi 28 août en cas de convocation', done: false },
+    ]
+  },
+  {
+    id: 'reunion-rentree-bidm-a26',
+    title: '🎓 Réunion de rentrée BIDM S3 — OBLIGATOIRE',
+    date: '2026-09-02',
+    time: '08:30',
+    category: 'BIDM',
+    description: '🆕 NEW (email Nathalie Darène du 28/07, changement de date) : la réunion d\'accueil BIDM S3, initialement prévue le jeudi 3 septembre, est <strong>avancée au mercredi 2 septembre 2026 dès 8h30</strong>. Présence obligatoire. La salle sera communiquée la veille. Les premiers cours à présence obligatoire commencent pendant la semaine du <strong>31 août</strong>.',
+    tasks: [
+      { id: 'rentree-bidm-1', label: 'Consulter l\'emploi du temps pour les premiers cours obligatoires dès la semaine du 31 août', done: false },
+      { id: 'rentree-bidm-2', label: 'Vérifier la salle communiquée par email le 1er septembre', done: false },
+      { id: 'rentree-bidm-3', label: 'Être présent mercredi 2 septembre à 8h30 — obligatoire', done: false },
     ]
   },
   {
