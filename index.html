@@ -349,7 +349,7 @@
 </div>
 
 <footer>
-  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 24 août 2026
+  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 27 août 2026
 </footer>
 
 <script>
@@ -660,15 +660,31 @@ const DEADLINES = [
   },
   {
     id: 'regulation-pedagogique-a26',
-    title: '📋 Régulation pédagogique UV A26 — convocation possible',
+    title: '📋 UV A26 validées — contrôler et valider l\'état prévisionnel',
     date: '2026-08-28',
     time: null,
     category: 'Inscriptions',
-    description: '🆕 NEW (email automatique SME du 27/07) : les vœux d\'UV seront traités pendant la phase de régulation pédagogique du <strong>17 au 28 août 2026</strong>. La liste définitive des inscriptions sera envoyée à l\'issue de cette phase. ⚠️ Une convocation est possible le <strong>vendredi 28 août</strong> s\'il faut compléter pédagogiquement les inscriptions.',
+    description: '🆕 MAJ (email automatique UTC du 26/08) : les inscriptions du semestre ont été <strong>validées par la responsable pédagogique</strong>. Il faut maintenant consulter les UV effectivement affectées dans ENT → Dossier étudiant → Jury de Suivi, puis <strong>valider l\'état prévisionnel</strong> (un choix de remplacement peut avoir été attribué). En cas de problème, envoyer dès le <strong>vendredi 28 août</strong> un courriel au bon responsable avec l\'objet strict <strong>[UV]</strong>, la nature du problème, les solutions proposées et un numéro où être joignable entre <strong>9h et 18h</strong>. Les demandes concernant une UV saturée seront ignorées.',
     tasks: [
-      { id: 'reg-a26-1', label: 'Surveiller les emails UTC pendant la régulation du 17 au 28 août', done: false },
-      { id: 'reg-a26-2', label: 'Vérifier la liste définitive des UV dès sa réception', done: false },
-      { id: 'reg-a26-3', label: 'Rester disponible le vendredi 28 août en cas de convocation', done: false },
+      { id: 'reg-a26-1', label: '✅ Validation pédagogique reçue le 26 août', done: true },
+      { id: 'reg-a26-2', label: 'Consulter les UV réellement affectées dans ENT → Jury de Suivi (remplacements possibles)', done: false },
+      { id: 'reg-a26-3', label: 'Valider l\'état prévisionnel des inscriptions sur l\'ENT', done: false },
+      { id: 'reg-a26-4', label: 'Si problème : écrire au responsable dès le 28 août, objet [UV], en restant joignable de 9h à 18h', done: false },
+    ]
+  },
+  {
+    id: 'semaine-rentree-uv-a26',
+    title: '📅 Semaine de rentrée UV A26 — cours à présence obligatoire',
+    date: '2026-08-31',
+    time: null,
+    category: 'Inscriptions',
+    description: '🆕 NEW (email Priscilla Velut / SME du 26/08, planning FISE joint) : emploi du temps spécial du <strong>31 août au 5 septembre 2026</strong>. Il faut d\'abord vérifier les UV réellement affectées sur l\'ENT. Pour les UV demandées par Jean-Valère : <strong>LA14 et SY98 comportent deux cours pendant la semaine de rentrée, tous deux obligatoires</strong> ; <strong>TN04 n\'a qu\'un seul cours de tout le semestre pendant cette semaine</strong> et doit être priorisé en cas de conflit. Les emplois du temps personnalisés applicables à partir du 7 septembre seront envoyés au plus tard le <strong>vendredi 4 septembre</strong>.',
+    tasks: [
+      { id: 'sr-a26-1', label: 'Vérifier les UV attribuées et les éventuels remplacements avant de suivre le planning', done: false },
+      { id: 'sr-a26-2', label: 'Repérer et assister aux deux cours de LA14 si l\'UV est attribuée', done: false },
+      { id: 'sr-a26-3', label: 'Repérer et assister aux deux cours de SY98 si l\'UV est attribuée', done: false },
+      { id: 'sr-a26-4', label: 'Prioriser l\'unique cours TN04 de la semaine de rentrée en cas de conflit', done: false },
+      { id: 'sr-a26-5', label: 'Contrôler l\'emploi du temps personnalisé reçu au plus tard le 4 septembre', done: false },
     ]
   },
   {
