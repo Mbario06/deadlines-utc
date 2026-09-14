@@ -349,7 +349,7 @@
 </div>
 
 <footer>
-  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 10 septembre 2026
+  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 14 septembre 2026
 </footer>
 
 <script>
@@ -678,12 +678,13 @@ const DEADLINES = [
     date: '2026-08-31',
     time: null,
     category: 'Inscriptions',
-    description: '✅ MAJ (emails Priscilla Velut / SME du 26/08, Nathalie Darène du 31/08 et SME du 03/09) : emploi du temps spécial du <strong>31 août au 5 septembre 2026</strong>. Les affectations A26 sont confirmées : <strong>ED04, INF2, LA14, SI11, SY98, TC00 et TN04</strong>. Jean-Valère était signalé absent sans justificatif au premier cours de SY98 du 31 août ; le justificatif devait être envoyé très rapidement à Nathalie Darène. L\'emploi du temps personnalisé applicable à partir du 7 septembre a été reçu le <strong>3 septembre</strong>.',
+    description: '✅ MAJ (emails Priscilla Velut / SME du 26/08, Nathalie Darène du 31/08, SME du 03/09 et Eunha Randhagen du 14/09) : emploi du temps spécial du <strong>31 août au 5 septembre 2026</strong>. Les affectations A26 sont confirmées : <strong>ED04, INF2, LA14, SI11, SY98, TC00 et TN04</strong>. Jean-Valère était signalé absent sans justificatif au premier cours de SY98 du 31 août. L\'enseignante de LA14 a également signalé le <strong>14 septembre</strong> son absence au premier TD LA14 (groupe TD8) et demande d\'en expliquer la raison. L\'emploi du temps personnalisé applicable à partir du 7 septembre a été reçu le <strong>3 septembre</strong>.',
     tasks: [
       { id: 'sr-a26-1', label: '✅ UV attribuées confirmées par le SME le 3 septembre', done: true },
       { id: 'sr-a26-2', label: '✅ LA14 attribuée — suivre le cours et le TD indiqués dans l\'emploi du temps', done: true },
       { id: 'sr-a26-3', label: '✅ SY98 attribuée — suivre le cours, le TD et le TP indiqués', done: true },
       { id: 'sr-a26-3b', label: '⚡ Envoyer très rapidement à Nathalie Darène le justificatif d\'absence au premier cours de SY98 du 31 août', done: false },
+      { id: 'sr-a26-3c', label: '⚡ Répondre à Eunha Randhagen pour expliquer l\'absence au premier TD LA14 (TD8)', done: false },
       { id: 'sr-a26-4', label: '✅ TN04 attribuée — groupe D8, vendredi 16h30-18h30', done: true },
       { id: 'sr-a26-5', label: '✅ Emploi du temps personnalisé reçu le 3 septembre', done: true },
     ]
@@ -732,14 +733,17 @@ const DEADLINES = [
   },
   {
     id: 'ed04-premier-cours-a26',
-    title: '💶 ED04 Finance — premier cours',
+    title: '💶 ED04 Finance — séances obligatoires A26',
     date: '2026-09-09',
     time: '09:30',
     category: 'ED04',
-    description: '🆕 MAJ (emails Nathalie Darène des 28/08 et 31/08) : le <strong>premier cours d’ED04 Finance</strong> aura lieu le <strong>mercredi 9 septembre 2026 à 9h30</strong>, en salle <strong>A314</strong>. Jean-Valère figure parmi les étudiants destinataires.',
+    description: '🆕 MAJ (emails Nathalie Darène des 28/08, 31/08 et 11/09) : le premier cours d’ED04 Finance a eu lieu le <strong>mercredi 9 septembre 2026 à 9h30</strong>, en salle <strong>A314</strong>. Toutes les séances sont à <strong>présence obligatoire</strong>. Dates confirmées : 9, 10, 16, 17, 23, 24 et 30 septembre ; 1, 7 et 8 octobre ; 4, 5, 10 et 12 novembre ; 9 et 10 décembre. Attention : séance le <strong>mardi 10 novembre</strong>, journée transformée en mercredi. Aucune séance les 14, 15, 21, 22, 28 et 29 octobre, ni les 18, 19, 25 et 26 novembre, ni les 2 et 3 décembre.',
     tasks: [
       { id: 'ed04-a26-1', label: '✅ Salle confirmée par email : A314', done: true },
       { id: 'ed04-a26-2', label: 'Être présent au premier cours mercredi 9 septembre à 9h30', done: false },
+      { id: 'ed04-a26-3', label: 'Enregistrer toutes les séances obligatoires ED04 dans l\'agenda', done: false },
+      { id: 'ed04-a26-4', label: 'Prochaines séances : 16, 17, 23, 24 et 30 septembre', done: false },
+      { id: 'ed04-a26-5', label: 'Séances suivantes : 1, 7 et 8 octobre ; 4, 5, 10 et 12 novembre ; 9 et 10 décembre', done: false },
     ]
   },
   {
@@ -748,11 +752,39 @@ const DEADLINES = [
     date: '2026-09-11',
     time: '16:30',
     category: 'TN04',
-    description: '🆕 NEW (email Barbara Lafarge du 05/09) : première séance TN04 du groupe <strong>D8</strong> le <strong>vendredi 11 septembre 2026 de 16h30 à 18h30</strong>, en salle <strong>J110 à PG1</strong> dans l\'espace Design. La séance présentera la charte de l\'UV, la grille critériée et permettra de choisir le projet et l\'association partenaire. Commencer à échanger avec les autres membres du groupe pour former des binômes ou trinômes.',
+    description: '🆕 MAJ (emails Barbara Lafarge des 05/09 et 12/09) : première séance TN04 du groupe <strong>D8</strong> le <strong>vendredi 11 septembre 2026 de 16h30 à 18h30</strong>, en salle <strong>J110 à PG1</strong> dans l\'espace Design. Pour la prochaine séance, travailler la fiche projet et le Gantt transmis, réfléchir au cahier des charges et commencer à le rédiger en l\'illustrant selon le projet final convenu avec l\'association.',
     tasks: [
       { id: 'tn04-a26-1', label: 'Être présent vendredi 11 septembre à 16h30 en J110 (PG1)', done: false },
       { id: 'tn04-a26-2', label: 'Réfléchir au thème de projet et à l\'association partenaire', done: false },
       { id: 'tn04-a26-3', label: 'Échanger avec le groupe D8 pour former un binôme ou trinôme', done: false },
+      { id: 'tn04-a26-4', label: 'Avant la prochaine séance : travailler la fiche projet et le Gantt', done: false },
+      { id: 'tn04-a26-5', label: 'Réfléchir au cahier des charges et commencer sa rédaction avec des illustrations du projet final', done: false },
+    ]
+  },
+  {
+    id: 'asso-elite-a26-candidature',
+    title: '🏅 Candidature parcours Asso-élite A26',
+    date: '2026-09-20',
+    time: '23:59',
+    category: 'Vie étudiante',
+    description: '🆕 NEW (email du BDE UTC du 11/09) : candidature au parcours <strong>Asso-élite A26</strong> à envoyer avant le <strong>dimanche 20 septembre 2026 à 23h59</strong>. Le dispositif est réservé aux responsabilités associatives importantes, peut ouvrir droit à des aménagements de semestre et doit être redemandé chaque semestre ; il n\'est pas rétroactif.',
+    tasks: [
+      { id: 'asso-elite-a26-1', label: 'Si concerné : remplir la fiche de candidature jointe à l\'email du BDE', done: false },
+      { id: 'asso-elite-a26-2', label: 'Envoyer la fiche à Véronique Hédou et au BDE avant le 20 septembre à 23h59', done: false },
+      { id: 'asso-elite-a26-3', label: 'Se préparer à un éventuel entretien pour justifier responsabilités et engagement', done: false },
+    ]
+  },
+  {
+    id: 'activation-mfa-utc-a26',
+    title: '🔐 Activation obligatoire du MFA UTC',
+    date: '2026-09-27',
+    time: null,
+    category: 'Administration',
+    description: '🆕 NEW (email DSI/DFP UTC du 10/09) : activer l\'authentification multifacteur du compte UTC au plus tard le <strong>27 septembre 2026</strong>. Après cette date, la double authentification sera obligatoire pour accéder aux outils et ressources numériques de l\'UTC. Procédure : <strong>dsi.utc.fr/dsi_doc_user/mfa-authentification-multi-facteur/</strong>.',
+    tasks: [
+      { id: 'mfa-utc-a26-1', label: 'Activer le MFA sur le compte UTC avant le 27 septembre', done: false },
+      { id: 'mfa-utc-a26-2', label: 'Tester une connexion CAS avec la double authentification', done: false },
+      { id: 'mfa-utc-a26-3', label: 'En cas de difficulté : contacter le support 5000 Étudiants', done: false },
     ]
   },
   {
