@@ -349,21 +349,36 @@
 </div>
 
 <footer>
-  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 12 octobre 2026
+  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 15 octobre 2026
 </footer>
 
 <script>
 const DEADLINES = [
+  {
+    id: 'erasmus-p27-dossier-portugal',
+    title: 'Erasmus+ P27 Portugal — dépôt obligatoire du dossier',
+    date: '2026-11-20',
+    time: '15:30',
+    category: 'International',
+    description: 'Source : Mathilde Depretz, email du 12 octobre 2026. Dossier Erasmus+ obligatoire pour le départ au Portugal ; son absence peut annuler la mobilité. Dépôt en mains propres au <strong>bureau G206, BF</strong> : 13 novembre puis du 16 au 20 novembre, uniquement aux horaires annoncés. Dernière limite : <strong>vendredi 20 novembre à 15:30</strong> (Europe/Paris). Le 13 et le 20 : 09:00–12:30 et 14:00–15:30 ; les 16 et 18 : 09:00–12:30 et 14:00–16:30 ; le 17 : 09:00–12:30 et 14:00–17:30 ; le 19 : 10:30–12:30 et 14:00–16:30. Contrat rempli sur ordinateur, imprimé en recto sans agrafes, signature manuscrite originale page 9 ; copie CEAM et RIB à son nom en A4, deux exemplaires. Ensuite, transmettre à Mathilde les pièces restantes dès réception : OLA unique signé par étudiant, responsable UTC puis partenaire avant le départ ; acceptation du partenaire et calendrier académique si nécessaire. Exception postale uniquement en cas d’impossibilité de venir, après information par email, en respectant la limite postale annoncée. Trois PDF et checklist déjà classés ; rappel existant vérifié, aucun doublon créé. Aucun contrat signé, document envoyé ou dossier déposé.',
+    tasks: [
+      { id: 'erasmus-p27-pdf', label: 'Contrat, aide et charte Erasmus classés localement ; rappel existant vérifié', done: true },
+      { id: 'erasmus-p27-contrat', label: 'Compléter le contrat sans inventer les dates ; imprimer en recto, sans agrafes, puis signer page 9 après vérification', done: false },
+      { id: 'erasmus-p27-pieces', label: 'Réunir la copie CEAM et deux exemplaires du RIB personnel au format A4 ; lire la charte', done: false },
+      { id: 'erasmus-p27-depot', label: 'Déposer le dossier complet en G206 aux horaires autorisés, au plus tard le 20 novembre à 15:30', done: false },
+      { id: 'erasmus-p27-restants', label: 'Préparer OLA signé, acceptation partenaire et calendrier académique ; aucun envoi sans validation', done: false },
+    ]
+  },
   {
     id: 'inf2-rattrapage-15oct-a26',
     title: 'INF2 — cours du 9 octobre reporté au 15 octobre',
     date: '2026-10-15',
     time: '08:00',
     category: 'INF2',
-    description: 'Confirmé par Abdelmalek Nader via Moodle le 9 octobre 2026 : le cours du 9 octobre est rattrapé le <strong>jeudi 15 octobre, de 08:00 à 10:00</strong> (Europe/Paris). Salle et modalité présentiel/distanciel à confirmer par un prochain message. Le mail reporte aussi le TD D6 et le TP T6 ; ces groupes ne sont pas ceux identifiés dans l’agenda de Jean-Valère, aucun créneau supplémentaire présumé. Le cours est déjà déplacé dans Google Agenda, avec un rappel 30 minutes avant ; aucun doublon créé.',
+    description: 'Confirmé par Abdelmalek Nader via Moodle le 9 octobre 2026 : le cours du 9 octobre est rattrapé le <strong>jeudi 15 octobre, de 08:00 à 10:00</strong> (Europe/Paris). Confirmation Moodle du 13 octobre 2026 : cours en présentiel, salle FA100. Événement Google Agenda corrigé et vérifié. Le mail reporte aussi le TD D6 et le TP T6 ; ces groupes ne sont pas ceux identifiés dans l’agenda de Jean-Valère, aucun créneau supplémentaire présumé. Le cours est déjà déplacé dans Google Agenda, avec un rappel 30 minutes avant ; aucun doublon créé.',
     tasks: [
       { id: 'inf2-rattrapage-15oct-agenda', label: 'Cours déplacé dans Google Agenda : 15 octobre 08:00–10:00, rappel 30 minutes avant', done: true },
-      { id: 'inf2-rattrapage-15oct-mode', label: 'Vérifier le prochain message INF2 pour la salle et le mode présentiel/distanciel', done: false },
+      { id: 'inf2-rattrapage-15oct-mode', label: 'Présentiel FA100 confirmé le 13 octobre; agenda corrigé', done: true },
       { id: 'inf2-rattrapage-15oct-presence', label: 'Suivre le cours de rattrapage jeudi 15 octobre à 08:00', done: false },
     ]
   },
@@ -963,7 +978,7 @@ const DEADLINES = [
       "date": "2026-10-21",
       "time": "10:15",
       "category": "ED04",
-      "description": "Confirmé par le planning officiel SME du 5 octobre 2026 (email Priscilla Velut et pièce jointe Medians-A26.pdf) : médian ED04 le <strong>2026-10-21</strong>, de <strong>10:15 à 11:45</strong>, en <strong>BF A 212</strong>. Horaires Europe/Paris. Du 20 au 24 octobre, puis le 2 novembre, cours et TD suspendus ; TP, y compris informatiques, maintenus.",
+      "description": "Confirmé par le planning officiel SME du 5 octobre 2026 (email Priscilla Velut et pièce jointe Medians-A26.pdf) : médian ED04 le <strong>2026-10-21</strong>, de <strong>10:15 à 11:45</strong>, en <strong>BF A 212</strong>. Horaires Europe/Paris. Du 20 au 24 octobre, puis le 2 novembre, cours et TD suspendus ; TP, y compris informatiques, maintenus. Précision de Nathalie Darène du 12 octobre : révisions limitées aux contenus travaillés avec l’enseignant, et rien d’autre.",
       "tasks": [
           {
               "id": "ed04-median-a26-revision",
@@ -983,8 +998,10 @@ const DEADLINES = [
       "date": "2026-10-23",
       "time": "07:45",
       "category": "INF2",
-      "description": "Confirmé par le planning officiel SME du 5 octobre 2026 (email Priscilla Velut et pièce jointe Medians-A26.pdf) : médian INF2 le <strong>2026-10-23</strong>, de <strong>07:45 à 09:15</strong>, en <strong>BF A 300 / BF A 321</strong>. Horaires Europe/Paris. Du 20 au 24 octobre, puis le 2 novembre, cours et TD suspendus ; TP, y compris informatiques, maintenus. La répartition individuelle entre les deux salles n’est pas précisée : vérifier la convocation.",
+      "description": "Confirmé par le planning officiel SME du 5 octobre 2026 (email Priscilla Velut et pièce jointe Medians-A26.pdf) : médian INF2 le <strong>2026-10-23</strong>, de <strong>07:45 à 09:15</strong>, en <strong>BF A 300 / BF A 321</strong>. Horaires Europe/Paris. Du 20 au 24 octobre, puis le 2 novembre, cours et TD suspendus ; TP, y compris informatiques, maintenus. La répartition individuelle sera affichée dans chaque salle le jour de l’épreuve : consulter la liste pour connaître sa place. Consignes Moodle du 13 octobre : seule une feuille manuscrite est autorisée. La préparer avant le médian. Tiers-temps uniquement pour les bénéficiaires : BF A303, fin à 09:45; aucun tiers-temps personnel présumé. Événement existant complété et relu; rappels 24 heures et 1 heure avant, aucun doublon.",
       "tasks": [
+          {"id": "inf2-median-a26-feuille", "label": "Préparer la seule feuille manuscrite autorisée", "done": false},
+          {"id": "inf2-median-a26-place", "label": "Consulter la liste affichée dans chaque salle le jour du médian", "done": false},
           {
               "id": "inf2-median-a26-revision",
               "label": "Réviser INF2 avant l’épreuve",
