@@ -340,6 +340,16 @@
 
 <div class="section-title" style="margin-top: 32px;">🗓️ Deadlines & Examens</div>
 
+<aside id="utc-examens-reportes-a26" style="margin:16px 0;padding:16px;border:1px solid #e6a23c;border-radius:12px;">
+  <strong>UTC A26 — Médians reportés : INF2 reprogrammé au 6 novembre, ED04 au 18 novembre ; final SY98 toujours sans nouvelle date.</strong>
+  <p>Report général confirmé par Nathalie Darène le 26 octobre 2026, y compris pour les épreuves du 2 novembre. Convocations ultérieures : INF2 le 6 novembre 08:00–09:30 (annonce du 27 octobre) ; ED04 le 18 novembre 09:30–11:00 en A314 (mail du 28 octobre). Les autres dates restent à confirmer ; préavis de 4 jours souhaité, non garanti. Le report ne modifie pas à lui seul les rendus de projet ni les autres évaluations en TD.</p>
+  <ul>
+    <li>Continuer les révisions sans attendre les nouvelles convocations.</li>
+    <li>Relever les nouvelles dates dès leur réception.</li>
+    <li>Mettre à jour les rappels uniquement après confirmation des créneaux.</li>
+  </ul>
+</aside>
+
 <div id="deadlines-container"></div>
 
 <div>
@@ -349,7 +359,7 @@
 </div>
 
 <footer>
-  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 26 octobre 2026
+  Généré automatiquement depuis Gmail · UTC Compiègne · Automne 2026 · 29 octobre 2026
 </footer>
 
 <script>
@@ -394,6 +404,19 @@ const DEADLINES = [
       { id: 'erasmus-p27-pieces', label: 'Réunir la copie CEAM et deux exemplaires du RIB personnel au format A4 ; lire la charte', done: false },
       { id: 'erasmus-p27-depot', label: 'Déposer le dossier complet en G206 aux horaires autorisés, au plus tard le 20 novembre à 15:30', done: false },
       { id: 'erasmus-p27-restants', label: 'Préparer OLA signé, acceptation partenaire et calendrier académique ; aucun envoi sans validation', done: false },
+    ]
+  },
+  {
+    id: 'inf2-median-6nov-a26',
+    title: 'INF2 — examen médian reprogrammé au 6 novembre',
+    date: '2026-11-06',
+    time: '08:00',
+    category: 'INF2',
+    description: 'Confirmé par Abdelmalek Nader via Moodle le 27 octobre 2026 : examen médian le <strong>vendredi 6 novembre, 08:00–09:30</strong> (Europe/Paris). Salles <strong>BF A300 / BF A321</strong>, affectation à consulter sur les listes affichées le jour J. BF A303 et fin à 10:00 uniquement pour les étudiants avec tiers-temps ; statut personnel non présumé. <strong>Seule une feuille manuscrite recto-verso est autorisée.</strong> Événement existant vérifié dans Google Agenda, rappels 24 h et 1 h avant ; aucun doublon créé. Source : <a href="https://moodle.utc.fr/mod/forum/discuss.php?d=30913#p73943">annonce Moodle du 27 octobre</a>.',
+    tasks: [
+      { id: 'inf2-median-6nov-agenda', label: 'Agenda vérifié : 6 novembre 08:00–09:30, rappels 24 h et 1 h avant', done: true },
+      { id: 'inf2-median-6nov-feuille', label: 'Préparer une feuille manuscrite recto-verso', done: false },
+      { id: 'inf2-median-6nov-place', label: 'Consulter les listes de places BF A300 / A321 le jour J', done: false },
     ]
   },
   {
@@ -886,20 +909,58 @@ const DEADLINES = [
     ]
   },
   {
-    id: 'international-p27-reponse-destination',
-    title: '🌍 Échange P27 — destination acceptée, dossier IPVC en préparation',
-    date: '2026-09-15',
-    time: '23:00',
-    category: 'International',
-    description: '✅ MAJ (emails des 25 et 28/09) : la mobilité P27 à <strong>VIANA DO CASTELO — Instituto Politecnico de Viana do Castelo</strong> est désormais en préparation ; Nathalie Darène confirme les affectations internationales. Jean-Valère a envoyé à Erica Arruda Patte les informations d’identité nécessaires à la nomination le <strong>25 septembre</strong>, et Erica en a accusé réception le <strong>28 septembre</strong>. Aucune nouvelle date limite n’est annoncée. Pour le dossier partenaire, préparer le <strong>Transcript of Records</strong> : si le programme de cours ENT est saisi et validé, le télécharger depuis l’ENT ; sinon, le demander à <strong>Fanny Lefevre</strong> (IDM). La date historique de réponse à l’offre reste inchangée ; ne pas relancer une acceptation déjà effectuée. <strong>MAJ Mathilde Depretz du 5 octobre : contrat pédagogique en ligne OLA obligatoire, signé par toutes les parties et transmis avant le départ P27.</strong> Utiliser learning-agreement.eu et l’année académique 2026-2027. Les formulaires papier ne sont plus acceptés ; il est interdit de créer deux OLA. Aucune date précise de dépôt n’est annoncée. Guide et checklist déjà classés localement ; aucun contrat créé, signé ou soumis. <strong>Mise à jour IPVC du 23 octobre 2026 : les procédures du semestre 2 ne sont pas encore ouvertes ; le partenaire transmettra les instructions dès leur ouverture. Aucune date limite de candidature partenaire annoncée. Le compte MobilidadeNet est déjà activé selon le message envoyé le 22 octobre ; ne pas créer de seconde candidature ni relancer pour un accès avant les instructions. Cette attente ne modifie pas le dépôt du dossier Erasmus+ UTC au 20 novembre à 15:30.</strong>',
-    tasks: [
-      { id: 'international-p27-reponse-1', label: '✅ Destination acceptée — démarches de nomination engagées auprès de la DRI', done: true },
-      { id: 'international-p27-identite', label: '✅ Informations nécessaires à la nomination envoyées le 25 septembre ; réception confirmée le 28 septembre', done: true },
-      { id: 'international-p27-reponse-2', label: 'IPVC confirme le 23 octobre : procédures pas encore ouvertes ; attendre les instructions et la date limite partenaire', done: false },
-      { id: 'international-p27-reponse-3', label: 'Préparer le programme de cours et le faire valider par les responsables', done: false },
-      { id: 'international-p27-transcript', label: 'Préparer le Transcript of Records : téléchargement ENT si programme validé, sinon demande à Fanny Lefevre', done: false },
-      { id: 'international-p27-ola', label: 'Vérifier si un OLA existe avant toute création ; préparer les cours validés, année 2026-2027, puis obtenir les signatures avant le départ', done: false },
-      { id: 'international-p27-reponse-4', label: 'Compléter obligatoirement le kit Erasmus+ dès réception du mail du pôle bourses', done: false },
+    "id": "international-p27-reponse-destination",
+    "title": "🌍 Échange P27 — destination acceptée, dossier IPVC en préparation",
+    "date": "2026-09-15",
+    "time": "23:00",
+    "category": "International",
+    "description": "✅ MAJ (emails des 25 et 28/09) : la mobilité P27 à <strong>VIANA DO CASTELO — Instituto Politecnico de Viana do Castelo</strong> est désormais en préparation ; Nathalie Darène confirme les affectations internationales. Jean-Valère a envoyé à Erica Arruda Patte les informations d’identité nécessaires à la nomination le <strong>25 septembre</strong>, et Erica en a accusé réception le <strong>28 septembre</strong>. Aucune nouvelle date limite n’est annoncée. Pour le dossier partenaire, préparer le <strong>Transcript of Records</strong> : si le programme de cours ENT est saisi et validé, le télécharger depuis l’ENT ; sinon, le demander à <strong>Fanny Lefevre</strong> (IDM). La date historique de réponse à l’offre reste inchangée ; ne pas relancer une acceptation déjà effectuée. <strong>MAJ Mathilde Depretz du 5 octobre : contrat pédagogique en ligne OLA obligatoire, signé par toutes les parties et transmis avant le départ P27.</strong> Utiliser learning-agreement.eu et l’année académique 2026-2027. Les formulaires papier ne sont plus acceptés ; il est interdit de créer deux OLA. Aucune date précise de dépôt n’est annoncée. Guide et checklist déjà classés localement ; aucun contrat créé, signé ou soumis. <strong>Mise à jour IPVC du 23 octobre 2026 : les procédures du semestre 2 ne sont pas encore ouvertes ; le partenaire transmettra les instructions dès leur ouverture. Aucune date limite de candidature partenaire annoncée. Le compte MobilidadeNet est déjà activé selon le message envoyé le 22 octobre ; ne pas créer de seconde candidature ni relancer pour un accès avant les instructions. Cette attente ne modifie pas le dépôt du dossier Erasmus+ UTC au 20 novembre à 15:30.</strong> <strong>Consigne UTC du 28 octobre 2026 :</strong> sélectionner les modules, transmettre leurs descriptifs pour contrôle de cohérence, puis renseigner les choix dans l’ENT pour validation. La saisie seule ne vaut pas validation pédagogique. Aucune nouvelle date limite annoncée. Brouillon existant retrouvé dans le suivi partagé ; les six descriptifs officiels restent à collecter avant une demande d’approbation complète. Aucun envoi ni nouvelle candidature.",
+    "tasks": [
+      {
+        "id": "international-p27-reponse-1",
+        "label": "✅ Destination acceptée — démarches de nomination engagées auprès de la DRI",
+        "done": true
+      },
+      {
+        "id": "international-p27-identite",
+        "label": "✅ Informations nécessaires à la nomination envoyées le 25 septembre ; réception confirmée le 28 septembre",
+        "done": true
+      },
+      {
+        "id": "international-p27-reponse-2",
+        "label": "IPVC confirme le 23 octobre : procédures pas encore ouvertes ; attendre les instructions et la date limite partenaire",
+        "done": false
+      },
+      {
+        "id": "international-p27-reponse-3",
+        "label": "Préparer le programme de cours et le faire valider par les responsables",
+        "done": false
+      },
+      {
+        "id": "international-p27-transcript",
+        "label": "Préparer le Transcript of Records : téléchargement ENT si programme validé, sinon demande à Fanny Lefevre",
+        "done": false
+      },
+      {
+        "id": "international-p27-ola",
+        "label": "Vérifier si un OLA existe avant toute création ; préparer les cours validés, année 2026-2027, puis obtenir les signatures avant le départ",
+        "done": false
+      },
+      {
+        "id": "international-p27-reponse-4",
+        "label": "Compléter obligatoirement le kit Erasmus+ dès réception du mail du pôle bourses",
+        "done": false
+      },
+      {
+        "id": "international-p27-descriptifs",
+        "label": "Collecter les six descriptifs officiels et compléter le brouillon pédagogique existant ; transmission uniquement après validation",
+        "done": false
+      },
+      {
+        "id": "international-p27-validation-modules",
+        "label": "Faire vérifier la cohérence des modules puis contrôler leur validation effective sur l’ENT ; une saisie ne vaut pas acceptation",
+        "done": false
+      }
     ]
   },
   {
@@ -981,11 +1042,11 @@ const DEADLINES = [
   },
   {
     "id": "sy98-final-a26",
-    "title": "SY98 — Final : maintien à confirmer",
+    "title": "SY98 — Final reporté, nouvelle date à confirmer",
     "date": "2026-10-20",
-    "time": "10:15",
+    "time": null,
     "category": "SY98",
-    "description": "Confirmé par le planning officiel SME du 5 octobre 2026 (email Priscilla Velut et pièce jointe Medians-A26.pdf) : final SY98 le <strong>2026-10-20</strong>, de <strong>10:15 à 11:45</strong>, en <strong>BF A 617</strong>. Horaires Europe/Paris. Du 20 au 24 octobre, puis le 2 novembre, cours et TD suspendus ; TP, y compris informatiques, maintenus. Le planning précise bien <strong>SY98-Final</strong>, malgré son organisation pendant la semaine des médians. MISE À JOUR du 19 octobre : le report général porte sur les MÉDIANS ; ce document nomme SY98 FINAL. Son inclusion dans le report reste inconnue : créneau conservé par prudence, ne pas considérer son maintien comme confirmé. Les consignes générales de suspension des cours/TD ci-dessus sont remplacées : soutien facultatif aux horaires habituels, hors jeudi 22 après-midi et vendredi 23 matin ; TP maintenus hors ces exceptions. Programme communiqué par Nathalie Darène : chapitres 2 et 3 ; chapitre 4, questions de cours. Agenda privé complété et relu.",
+    "description": "Nathalie Darène confirme explicitement le 26 octobre 2026 que le final SY98 fait partie des épreuves reportées, y compris les épreuves initialement prévues le 2 novembre. Aucune nouvelle date ni salle confirmée. Le 20 octobre conservé ici est uniquement un repère historique, pas une convocation. Le maintien évoqué précédemment est caduc. Préavis de 4 jours souhaité, non garanti. Continuer les révisions : chapitres 2 et 3 ; chapitre 4, questions de cours, selon le programme déjà communiqué.",
     "tasks": [
       {
         "id": "sy98-final-a26-revision",
@@ -994,48 +1055,43 @@ const DEADLINES = [
       },
       {
         "id": "sy98-final-a26-presence",
-        "label": "Vérifier la consigne propre au final SY98 ; ancien créneau 20/10 10:15–11:45, BF A617, maintien non confirmé",
+        "label": "Attendre la nouvelle convocation SY98 ; ne pas utiliser le 20 octobre comme échéance active",
         "done": false
       }
     ]
   },
   {
     "id": "ed04-median-a26",
-    "title": "ED04 — Médian reporté, date à confirmer",
-    "date": "2026-10-21",
-    "time": null,
+    "title": "ED04 — Médian reprogrammé au 18 novembre",
+    "date": "2026-11-18",
+    "time": "09:30",
     "category": "ED04",
-    "description": "MISE À JOUR du 19 octobre 2026 : médian reporté. Nouvelle date individuelle non annoncée ; fenêtre du 3 au 23 novembre, selon Xavier Fallard. La date conservée ici est uniquement historique, pas une convocation. Aucun cours de Finance en remplacement cette semaine, confirme Nathalie Darène. Sources : Présidence UTC, Xavier Fallard et consignes propres à l’UV du 19 octobre. Agenda existant relu : ancien créneau transparent et sans rappel ; aucun nouvel horaire inventé.",
+    "description": "Confirmé par Nathalie Darène, mail du 28 octobre 2026 : médian ED04 le <strong>mercredi 18 novembre 2026, 09:30–11:00</strong> (Europe/Paris), en <strong>A314</strong>. Fin à 11:30 uniquement pour les étudiants bénéficiant du tiers-temps ; statut personnel non présumé. Remplace la date historique du 21 octobre et les fenêtres provisoires. Événement Google Agenda existant vérifié le 29 octobre : rappels 24 h et 1 h avant, aucun doublon créé.",
     "tasks": [
       {
         "id": "ed04-median-a26-nouvelle-date",
-        "label": "Attendre la convocation individuelle, puis mettre à jour l’agenda",
-        "done": false
+        "label": "Agenda existant vérifié : 18 novembre 09:30–11:00, A314, rappels 24 h et 1 h avant",
+        "done": true
       },
       {
         "id": "ed04-median-a26-revision",
-        "label": "Poursuivre les révisions sans utiliser l’ancienne date comme échéance",
+        "label": "Réviser pour le médian ED04 du 18 novembre",
         "done": false
       }
     ]
   },
   {
     "id": "inf2-median-a26",
-    "title": "INF2 — Médian reporté, date à confirmer",
+    "title": "INF2 — Ancien créneau reporté : voir le 6 novembre",
     "date": "2026-10-23",
     "time": null,
     "category": "INF2",
-    "description": "MISE À JOUR du 20 octobre 2026 : Abdelmalek Nader confirme le report du médian INF2 après la Toussaint et annule le cours du vendredi 23 octobre, matinée dédiée aux ateliers collectifs. Sources enseignant : https://moodle.utc.fr/mod/forum/discuss.php?d=30882#p73859 et https://moodle.utc.fr/mod/forum/discuss.php?d=30883#p73860. Nouvelle date individuelle non annoncée ; fenêtre du 3 au 23 novembre, selon Xavier Fallard. La date conservée ici est uniquement historique, pas une convocation. Vendredi 23 octobre matin est banalisé : ni examen ni soutien présumé. Une feuille manuscrite autorisée selon les consignes du 13 octobre, à reconfirmer pour la nouvelle épreuve. Sources : Présidence UTC, Xavier Fallard et consignes propres à l’UV du 19 octobre. Agenda existant relu : ancien créneau transparent et sans rappel ; aucun nouvel horaire inventé.",
+    "description": "Repère historique du médian initialement prévu le 23 octobre. Nouvelle convocation confirmée par Abdelmalek Nader le 27 octobre 2026 : <strong>6 novembre 08:00–09:30</strong>, BF A300 / BF A321. Consulter l’entrée « INF2 — examen médian reprogrammé au 6 novembre » pour la préparation et les rappels. Le 23 octobre ne constitue plus une échéance active. Aucun second événement créé.",
     "tasks": [
       {
         "id": "inf2-median-a26-nouvelle-date",
-        "label": "Attendre la convocation individuelle, puis mettre à jour l’agenda",
-        "done": false
-      },
-      {
-        "id": "inf2-median-a26-revision",
-        "label": "Poursuivre les révisions sans utiliser l’ancienne date comme échéance",
-        "done": false
+        "label": "Nouvelle date confirmée : voir l’entrée du 6 novembre et son rappel existant",
+        "done": true
       }
     ]
   },
